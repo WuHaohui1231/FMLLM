@@ -1,24 +1,38 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
-from datasets import load_dataset
-from torch.utils.data import Dataset, DataLoader
-from transformers import DataCollatorForLanguageModeling
-import deepspeed
 import json
-import os
+import torch
+from torch.utils.data import Dataset
+from transformers import (
+    AutoTokenizer, 
+    AutoModelForCausalLM,
+    Trainer, 
+    TrainingArguments,
+    default_data_collator
+)
+import deepspeed
+import numpy as np
+from typing import Dict, List
 
-# os.environ["MASTER_PORT"] = "29501"
-# os.environ["CUDA_VISIBLE_DEVICES"] = "5,6,7"
-# os.environ["TOKENIZERS_PARALLELISM"] = "true" 
-# os.environ['CUDA_LAUNCH_BLOCKING']="1"
-# os.environ['TORCH_USE_CUDA_DSA'] = "1"
+def load_and_tokenize_data(json_file: str, tokenizer, max_length: int = 512):
+    # Load the JSON data
+    with open(json_file, 'r') as f:
+        data = json.load(f)
+    
+    print("DATALEN", len(data))
 
-# model_name = "meta-llama/Llama-3.1-8B-Instruct"
-model_name = "meta-llama/Llama-3.2-3B-Instruct"
-# model_name = "/model/zhufb/llama32/Llama-3.2-11B-Vision-Instruct"
-raw_data_path = "/model/junfeng/GraphRAG-DataSet/news/data/2014/2014-01-01.json"
+    # Extract text from the JSON objects
+    texts = [f"{item['Title']}\n{item['Date']}\n{item['Text']}" for item in data]
+    
+    # Tokenize all texts
+    tokenized_data = tokenizer(
+        texts,
+        max_length=max_length,
+        padding='max_length',
+        truncation=True,
+        return_tensors='pt'
+    )
+    
+    return tokenized_data
 
-# Step 1: Load and preprocess the dataset (Assuming tokenized_data is already available)
 class FinancialNewsDataset(Dataset):
     def __init__(self, tokenized_data):
         self.input_ids = tokenized_data['input_ids']
@@ -30,96 +44,76 @@ class FinancialNewsDataset(Dataset):
     def __getitem__(self, idx):
         return {
             'input_ids': self.input_ids[idx],
-            'attention_mask': self.attention_mask[idx]
+            'attention_mask': self.attention_mask[idx],
+            'labels': self.input_ids[idx].clone()
         }
 
-# Return: Formated data as a list of strings (text)
-def preprocess_data(data_path):
-    with open(data_path, 'r') as file:
-        dataset = json.load(file)
-
-# Preprocess each entry in the dataset
-    formatted_data = []
-    for entry in dataset:
-        # Extract relevant fields and concatenate them into a single string
-        formatted_text = f"{entry['Title']}\n{entry['Date']}\n{entry['Text']}"
-        formatted_data.append(formatted_text)
-    
-    return formatted_data
-
-
 def main():
-# Assuming tokenized_data is already loaded and preprocessed
-    formatted_data = preprocess_data(raw_data_path)
-
-
-
-    # DataLoader for batching
-    # train_dataloader = DataLoader(train_dataset, batch_size=4, collate_fn=data_collator)
-
-    # Step 2: Load the LLaMA Vision 11B model
-    model = AutoModelForCausalLM.from_pretrained(model_name)
-    # print("model max length ", model.model_max_length)
-    # model.model_max_length = 2048
-    # print("model max length 2 ", model.model_max_length)
-
-    # attention implementation SDPA
-
-    # Move model to GPU(s)
-    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # model.to(device)
-
-    # Multi-GPU setup
-    print(f"Using {torch.cuda.device_count()} GPUs!")
-    # if torch.cuda.device_count() > 1:
-        
-    #     model = torch.nn.DataParallel(model)
-
-    print("Tokenization")
-    tokenizer = AutoTokenizer.from_pretrained(model_name, device_map='auto') # Max length
-    tokenizer.model_max_length = 2048
+    # Configuration
+    # model_name = "meta-llama/Llama-2-7b"  # Replace with your base model
+    # model_name = "meta-llama/Llama-3.2-3B-Instruct"
+    model_name = "meta-llama/Llama-3.2-11B-Vision-Instruct"
+    train_file = "/home/haohuiwu/FMLLM/2021-01-06.json"
+    output_dir = "llm_pretrained"
+    max_length = 1024
+    
+    # Initialize tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     if tokenizer.pad_token is None:
-        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-        model.resize_token_embeddings(len(tokenizer))
-    tokenized_data = tokenizer(formatted_data, max_length=2048, padding=True, truncation=True, return_tensors="pt")
-
-
-    train_dataset = FinancialNewsDataset(tokenized_data)
-
-    data_collator = DataCollatorForLanguageModeling(
-        tokenizer=tokenizer,
-        mlm=False  # Causal LM
-        # truncate
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Initialize model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype=torch.bfloat16,
+        # device_map="auto"
     )
+    
+    print("TOKENIZATION")
+    # Load and tokenize data
+    tokenized_data = load_and_tokenize_data(train_file, tokenizer, max_length)
+    print("END Tokenization")
+    # Create dataset
+    dataset = FinancialNewsDataset(tokenized_data)
 
+    print(tokenized_data)
+    
+    # DeepSpeed configuration
+    
+    
+    # Training arguments
     training_args = TrainingArguments(
-        output_dir="./llama_3.2_vision_pretraining",
+        output_dir=output_dir,
         num_train_epochs=3,
         per_device_train_batch_size=1,
         gradient_accumulation_steps=8,
-        save_steps=500,
-        logging_dir='./logs',
-        logging_steps=50,
-        # fp16=True,
+        learning_rate=2e-5,
+        weight_decay=0.01,
+        warmup_steps=1000,
+        logging_dir="./logs",
+        logging_steps=10,
+        save_steps=2000,
+        save_total_limit=3,
+        deepspeed='/home/haohuiwu/FMLLM/deepspeed_config.json',
+        fp16=False,
         bf16=True,
-        deepspeed='./deepspeed_config.json',  # DeepSpeed config
-        #report_to="tensorboard",
     )
-    # gradient checkpointing, 
-
+    
+    # Initialize trainer
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=train_dataset,
-        data_collator=data_collator,
-        tokenizer=tokenizer,
+        train_dataset=dataset,
+        data_collator=default_data_collator,
     )
-
+    
     print("TRAINING")
-
+    # Start training
     trainer.train()
-
-# Huggingface SFT
+    
+    # Save the final model
+    trainer.save_model()
+    tokenizer.save_pretrained(output_dir)
 
 if __name__ == "__main__":
     main()
