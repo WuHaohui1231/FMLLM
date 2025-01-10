@@ -6,11 +6,46 @@ from transformers import (
     AutoModelForCausalLM,
     Trainer, 
     TrainingArguments,
+    TrainerCallback,
     default_data_collator
 )
 import deepspeed
 import numpy as np
 from typing import Dict, List
+import os
+import csv
+import time
+from datetime import datetime
+
+class LossLoggingCallback(TrainerCallback):
+    def __init__(self, log_file):
+        self.log_file = log_file
+        # Create/open the CSV file and write the header
+        with open(self.log_file, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['Timestamp', 'Step', 'Loss', 'Learning Rate', 'Epoch'])
+        self.start_time = time.time()
+
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if logs is None:
+            return
+        
+        # Only log if loss exists in logs
+        if 'loss' not in logs:
+            return
+            
+        current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+        # Extract relevant information
+        step = state.global_step
+        loss = logs.get('loss', 0.0)
+        learning_rate = logs.get('learning_rate', 0.0)
+        epoch = logs.get('epoch', 0.0)
+        
+        # Append to the CSV file
+        with open(self.log_file, 'a', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow([current_time, step, loss, learning_rate, epoch])
 
 def load_and_tokenize_data(json_file: str, tokenizer, max_length: int = 512):
     # Load the JSON data
@@ -53,9 +88,14 @@ def main():
     # model_name = "meta-llama/Llama-2-7b"  # Replace with your base model
     # model_name = "meta-llama/Llama-3.2-3B-Instruct"
     model_name = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-    train_file = "/home/haohuiwu/FMLLM/2021-01-06.json"
+    train_file = "2021-01-06.json"
     output_dir = "llm_pretrained"
-    max_length = 1024
+    max_length = 700
+
+    os.environ["MASTER_PORT"] = "29501"
+
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    log_file = f'training_loss_{timestamp}.csv'
     
     # Initialize tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
@@ -66,6 +106,7 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.bfloat16,
+        # attn_implementation='flash_attention_2',
         # device_map="auto"
     )
     
@@ -76,7 +117,7 @@ def main():
     # Create dataset
     dataset = FinancialNewsDataset(tokenized_data)
 
-    print(tokenized_data)
+    # print(tokenized_data)
     
     # DeepSpeed configuration
     
@@ -91,10 +132,11 @@ def main():
         weight_decay=0.01,
         warmup_steps=1000,
         logging_dir="./logs",
+        logging_first_step=True,
         logging_steps=10,
         save_steps=2000,
         save_total_limit=3,
-        deepspeed='/home/haohuiwu/FMLLM/deepspeed_config.json',
+        deepspeed='deepspeed_config.json',
         fp16=False,
         bf16=True,
     )
@@ -105,6 +147,7 @@ def main():
         args=training_args,
         train_dataset=dataset,
         data_collator=default_data_collator,
+        callbacks=[LossLoggingCallback(log_file)]
     )
     
     print("TRAINING")
