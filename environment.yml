@@ -310,7 +310,7 @@ dependencies:
   - zstandard=0.23.0=py310ha39cb0e_1
   - zstd=1.5.6=ha6fb4c9_0
   - pip:
-      - deepspeed==0.16.2+0b25630a
+      - deepspeed==0.16.2
       - einops==0.8.0
       - hjson==3.1.0
       - msgpack==1.1.0

@@ -88,11 +88,13 @@ def main():
     # model_name = "meta-llama/Llama-2-7b"  # Replace with your base model
     # model_name = "meta-llama/Llama-3.2-3B-Instruct"
     model_name = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-    train_file = "2021-01-06.json"
-    output_dir = "llm_pretrained"
-    max_length = 700
+    # train_file = "2021-01-06.json"
+    # train_file = "2022-10-28.json"
+    train_file = "partial_data.json"
+    output_dir = "llm_pretrained_1"
+    max_length = 1024
 
-    os.environ["MASTER_PORT"] = "29501"
+    # os.environ["MASTER_PORT"] = "29501"
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     log_file = f'training_loss_{timestamp}.csv'
@@ -125,9 +127,10 @@ def main():
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
-        num_train_epochs=3,
-        per_device_train_batch_size=1,
+        num_train_epochs=2,
+        per_device_train_batch_size=2,
         gradient_accumulation_steps=8,
+        gradient_checkpointing=True,
         learning_rate=2e-5,
         weight_decay=0.01,
         warmup_steps=1000,
