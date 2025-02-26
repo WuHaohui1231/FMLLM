@@ -91,7 +91,8 @@ def main():
     # train_file = "2021-01-06.json"
     # train_file = "2022-10-28.json"
     train_file = "partial_data.json"
-    output_dir = "llm_pretrained_1"
+    # train_file = "partial_financial_news_data.json"
+    output_dir = "llm_pretrained_2"
     max_length = 1024
 
     # os.environ["MASTER_PORT"] = "29501"
