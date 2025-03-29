@@ -63,9 +63,9 @@ def chunk_json_data(input_file: str, output_dir: str, chunk_size: int = 100000) 
 
 def main():
     # Configuration
-    INPUT_FILE = '/data/hh/FMLLM/concatenated_news_data.json'  # Replace with your input file path
-    OUTPUT_DIR = 'data'  # Output directory
-    CHUNK_SIZE = 100000  # Items per chunk
+    INPUT_FILE = '/data/hh/FMLLM/data/concatenated_news_data.json'  # Replace with your input file path
+    OUTPUT_DIR = '/model/haohui/chunked_financial_news_data_longer_2'  # Output directory
+    CHUNK_SIZE = 500000  # Items per chunk
     
     try:
         chunk_json_data(INPUT_FILE, OUTPUT_DIR, CHUNK_SIZE)

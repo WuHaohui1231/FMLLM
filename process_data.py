@@ -3,13 +3,13 @@ import json
 
 data_dir = "/model/junfeng/GraphRAG-DataSet/news/data"
 output_file = "consolidated_financial_news_data.json"
-output_file = "partial_financial_news_data.json"
+# output_file = "partial_financial_news_data.json"
 
 def combine_json_files(data_dir, output_file):
     consolidated_data = []
 
-    #for year in sorted(os.listdir(data_dir)):
-    for year in ["2022"]:
+    for year in sorted(os.listdir(data_dir)):
+    # for year in ["2022"]:
         year_path = os.path.join(data_dir, year)
 
         if os.path.isdir(year_path):
