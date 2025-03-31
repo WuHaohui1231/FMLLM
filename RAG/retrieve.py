@@ -1,3 +1,4 @@
+import torch
 import base64
 import faiss
 import os
@@ -13,8 +14,10 @@ from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
-from transformers import AutoModelForImageTextToText, AutoTokenizer
-import torch
+
+from custom_embedding import FinancialMultimodalEmbeddings
+# from transformers import AutoModelForImageTextToText, AutoTokenizer
+
 
 descriptions_path = "/model/haohui/FMLLM/rag-data/descriptions.json"
 os.environ["OPENAI_API_KEY"] = ""
@@ -36,7 +39,7 @@ def create_multi_vector_retriever(
 
 
     embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
-
+    # embedding_function = FinancialMultimodalEmbeddings()
     index = faiss.IndexFlatL2(len(embedding_function.embed_query("hello world")))
     # Create a vector store
     vectorstore = FAISS(
@@ -69,6 +72,7 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
 
     img_descriptions = []
     img_base64_list = []
+    # img_list = []
 
     for des_img in descriptions:
         image_path = des_img['image_path']
@@ -77,6 +81,8 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
         
         img_base64_list.append(image_base64)
         img_descriptions.append(image_desc)
+
+        # img_list.append(Image.open(image_path))
         # image.show()
 
 
@@ -89,12 +95,19 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
             Document(page_content=desc, metadata={id_key: doc_ids[i], "type": "text"})
             for i, desc in enumerate(doc_descriptions)
         ]
-        docs = [
-            Document(page_content=desc, metadata={id_key: doc_ids[i], "type": "image"})
-            for i, desc in enumerate(doc_contents)
+
+        # docs_to_embed = [
+        #     Document(page_content="isImage;" + doc, metadata={id_key: doc_ids[i], "type": "image_to_embed"})
+        #     for i, doc in enumerate(doc_contents)
+        # ]
+
+        original_docs = [
+            Document(page_content=doc, metadata={id_key: doc_ids[i], "type": "image"})
+            for i, doc in enumerate(doc_contents)
         ]
         retriever.vectorstore.add_documents(description_docs)
-        retriever.docstore.mset(list(zip(doc_ids, docs)))
+        # retriever.vectorstore.add_documents(docs_to_embed)
+        retriever.docstore.mset(list(zip(doc_ids, original_docs)))
 
     # Add image_base64s
     if img_descriptions:
@@ -171,8 +184,16 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
 
 def retrieve_best_image(query, retriever):
     retrieved_content = retriever.invoke(query)
+    print("len(retrieved_content): ", len(retrieved_content))
     best_match_image = retrieved_content[0].page_content
     return best_match_image
+
+def retrieve_top_k_images(query, retriever, k=2):
+    retrieved_content = retriever.invoke(query)
+    print("len(retrieved_content): ", len(retrieved_content))
+    top_k = retrieved_content[:k]
+    top_k_images = [rc.page_content for rc in top_k]
+    return top_k_images
 
 
 if __name__ == "__main__":
