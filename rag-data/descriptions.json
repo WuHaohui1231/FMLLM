@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Microchip Technology Inc. (MCHP) stock summary chart from NASDAQ, displaying a one-week line graph of stock price movements ending on June 24, 2024. Current stock price is $89.18, down 2.62%, with a post-market slight increase to $89.38. The chart includes a 52-week price range ($68.75 to $100.56), daily price range ($89.00 to $91.46), trading volume (4.77M), market capitalization (47.88B), P/E ratios (25.11 TTM and static), and price-to-book ratio (7.19). Analysts indicate positive market sentiment, recommending a buy with a median target price of $102.00.",
+        "image_path": "/model/haohui/FMLLM/rag-data/images/doc-microchip.PNG"
+    },
+    {
+        "description": "Financial results of operations for 3M Company in 2022 compared to 2021, including net sales breakdown and operating expenses analysis. The document discusses various expense categories such as Cost of Sales, Selling, General and Administrative Expenses (SG&A), Research, Development and Related Expenses (R&D), Gain on Business Divestitures, and Goodwill Impairment Expense. It highlights key factors affecting these expenses, including litigation costs (Combat Arms Earplugs), PFAS manufacturing issues at 3M's Zwijndrecht, Belgium site, impacts of exiting Russia, divestiture activities, and product development investments. The table explicitly lists percentages of net sales for each expense category for the years 2022 and 2021, showing changes such as increased Cost of Sales and SG&A, decreased R&D expenses, and a goodwill impairment recorded in 2022.",
+        "image_path": "/model/haohui/FMLLM/rag-data/images/doc-3m.PNG"
+    },
+    {
+        "description": "Quarterly Cash Flow chart showing operating cash flows and Year-over-Year (YoY) percentage changes for an unspecified company across quarters from Q1 2024 to Q1 2025. The chart includes blue bars representing operating cash flows, with values explicitly labeled for each quarter: 2.91B in Q1 2024, 6.35B in Q2 2024, 7.33B in Q3 2024, 11.50B in Q4 2024, and 15.35B projected for Q1 2025. The YoY change is represented by a yellow line indicating significant fluctuations, peaking notably in Q3 2024 and stabilizing thereafter. The interface also has navigation tabs labeled Operating, Investing, Financing, and Net Cash, with the Operating tab currently selected.",
+        "image_path": "/model/haohui/FMLLM/rag-data/images/stat-cashflow-1.jpg"
+    },
+    {
+        "description": "Stock market pre-market data displaying top gainers, including tickers CSLR, LPTV, XTIA, GDHG, SNTI, HOLI, BW, PRE, and NNE. CSLR leads with a pre-market change of 91.07%, followed by LPTV at 82.57% and XTIA at 60.63%. The table also includes specific details such as last price, pre-change percentage, absolute pre-change values, turnover (T/O) rate, acceleration, trading volume, turnover in shares (T/O), forward price-to-earnings ratio (PE/FWD), price-to-book ratio (PB), and market capitalization. This image summarizes key pre-market trading indicators useful for tracking early market movers.",
+        "image_path": "/model/haohui/FMLLM/rag-data/images/table-premarket.jpg"
+    },
+    {
+        "description": "Investment rating and institutional analyst recommendations dashboard for Amazon.com (AMZN.O), showing data such as consensus target price ($203.39), latest stock price ($172.12), comprehensive ratings, rating changes over time, and target price variations. The dashboard provides visual charts including institutional ratings (buy, overweight, neutral, underweight, sell), consistent rating changes from February 2024 to the latest date, and a bar chart indicating analyst target price changes. A detailed rating adjustment table presents numbers of rating agencies, buyers, holdings increased/decreased, neutral analysts, and sellers, as well as historical comprehensive ratings from February to July 2024. The ratings ratio bar chart displays distributions among buy, overweight, neutral, underweight, and sell recommendations.",
+        "image_path": "/model/haohui/FMLLM/rag-data/images/mixed-amazon.png"
+    }
+]
