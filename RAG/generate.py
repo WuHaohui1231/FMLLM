@@ -1,20 +1,13 @@
+import datetime
 from io import BytesIO
+import os
 import torch
 import base64
 from PIL import Image
-from transformers import MllamaForConditionalGeneration, AutoProcessor, AutoModelForImageTextToText
+from transformers import AutoProcessor, AutoModelForImageTextToText
 
 from retrieve import retrieve_best_image, create_multi_vector_retriever, store_data_to_retriever, retrieve_top_k_images
 from accelerate import infer_auto_device_map
-
-
-
-
-# Assume these variables are already defined:
-# image = PIL.Image object (e.g., Image.open("path/to/image.jpg"))
-# question = "What is in this image?"
-
-# Specify the model id for Llama 3.2 Vision
 
 
 def generate_answer(image, question, model_id = "meta-llama/Llama-3.2-11B-Vision-Instruct"):
@@ -65,7 +58,17 @@ def generate_answer(image, question, model_id = "meta-llama/Llama-3.2-11B-Vision
     # Format the conversation into a prompt string expected by the model
     input_text = processor.apply_chat_template(messages, add_generation_prompt=True)
 
-    # # Process multiple images and text to create model inputs
+    inputs = processor(image, input_text, return_tensors="pt").to(model.device)
+
+    # Generate the answer with the model (adjust max_new_tokens as needed)
+    output = model.generate(**inputs, max_new_tokens=200)
+
+    # Decode the generated tokens into a string answer
+    result = processor.decode(output[0])
+
+    return result
+
+        # # Process multiple images and text to create model inputs
     # if isinstance(image, list):
     #     # Handle multiple images
     #     processed_inputs = []
@@ -86,16 +89,6 @@ def generate_answer(image, question, model_id = "meta-llama/Llama-3.2-11B-Vision
     #             inputs["attention_mask"] = torch.cat([inputs["attention_mask"], processed_inputs[i]["attention_mask"]], dim=0)
     # else:
     #     # Process a single image
-    
-    inputs = processor(image, input_text, return_tensors="pt").to(model.device)
-
-    # Generate the answer with the model (adjust max_new_tokens as needed)
-    output = model.generate(**inputs, max_new_tokens=200)
-
-    # Decode the generated tokens into a string answer
-    result = processor.decode(output[0])
-
-    return result
 
 def main():
     query = "What's the current price of Microchip"
@@ -104,6 +97,22 @@ def main():
     store_data_to_retriever(retriever)
     retrieved_image_base64 = retrieve_best_image(query, retriever)
     image = Image.open(BytesIO(base64.b64decode(retrieved_image_base64)))
+    # Save the retrieved image to a file
+    output_dir = "retrieved_images"
+    
+    # Create the output directory if it doesn't exist
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    # Generate a unique filename using timestamp
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    image_filename = os.path.join(output_dir, f"retrieved_image_{timestamp}.png")
+    
+    # Save the image
+    image.save(image_filename)
+    print(f"Retrieved image saved to: {image_filename}")
+
+    
     # retrieved_image_base64 = retrieve_top_k_images(query, retriever, k=2)
     # image = [Image.open(BytesIO(base64.b64decode(img))) for img in retrieved_image_base64]
     print("Retrieved image. Generating answer...")

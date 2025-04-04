@@ -19,10 +19,7 @@ from custom_embedding import FinancialMultimodalEmbeddings
 # from transformers import AutoModelForImageTextToText, AutoTokenizer
 
 
-descriptions_path = "/model/haohui/FMLLM/rag-data/descriptions.json"
-os.environ["OPENAI_API_KEY"] = ""
-
-
+descriptions_path = "/model/haohui/FMLLM/rag-data-draft/descriptions.json"
 
 def encode_image(image_path):
     """Getting the base64 string"""
@@ -38,8 +35,8 @@ def create_multi_vector_retriever(
     """
 
 
-    embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
-    # embedding_function = FinancialMultimodalEmbeddings()
+    # embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
+    embedding_function = FinancialMultimodalEmbeddings()
     index = faiss.IndexFlatL2(len(embedding_function.embed_query("hello world")))
     # Create a vector store
     vectorstore = FAISS(
@@ -96,17 +93,17 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
             for i, desc in enumerate(doc_descriptions)
         ]
 
-        # docs_to_embed = [
-        #     Document(page_content="isImage;" + doc, metadata={id_key: doc_ids[i], "type": "image_to_embed"})
-        #     for i, doc in enumerate(doc_contents)
-        # ]
+        docs_to_embed = [
+            Document(page_content="isImage;" + doc, metadata={id_key: doc_ids[i], "type": "image_to_embed"})
+            for i, doc in enumerate(doc_contents)
+        ]
 
         original_docs = [
             Document(page_content=doc, metadata={id_key: doc_ids[i], "type": "image"})
             for i, doc in enumerate(doc_contents)
         ]
         retriever.vectorstore.add_documents(description_docs)
-        # retriever.vectorstore.add_documents(docs_to_embed)
+        retriever.vectorstore.add_documents(docs_to_embed)
         retriever.docstore.mset(list(zip(doc_ids, original_docs)))
 
     # Add image_base64s

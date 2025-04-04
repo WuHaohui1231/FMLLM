@@ -3,7 +3,7 @@ import base64
 from io import BytesIO
 from langchain_core.embeddings import Embeddings
 from langchain_openai import OpenAIEmbeddings
-from transformers import AutoProcessor, LayoutLMv3Model
+from transformers import ColPaliForRetrieval, ColPaliProcessor
 from PIL import Image
 import numpy as np
 import os
@@ -17,9 +17,7 @@ from typing import List, Dict
 class FinancialMultimodalEmbeddings(Embeddings):
     """Custom embeddings class that combines CLIP for visual understanding and LayoutLMv3 for text-in-image understanding"""
     
-    def __init__(self, 
-                 layoutlm_model_name: str = "microsoft/layoutlmv3-base",
-                 embedding_dim: int = 1536):
+    def __init__(self, embedding_dim: int = 1536):
         """
         Initialize with models specialized for different aspects of financial images
         
@@ -32,58 +30,56 @@ class FinancialMultimodalEmbeddings(Embeddings):
         # 1536 is the dimension of OpenAI text-embedding-3-small
         self.embedding_dim = embedding_dim
         
-        # Load CLIP for visual features
-        self.openai_embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-        # self.clip_processor = CLIPProcessor.from_pretrained(clip_model_name)
+        # OpenAI embeddings for text
+        self.text_embedding = OpenAIEmbeddings(model="text-embedding-3-small")
+
         
-        # Load LayoutLMv3 for text-in-image understanding
-        self.layoutlm_model = LayoutLMv3Model.from_pretrained(layoutlm_model_name)
-        self.layoutlm_processor = AutoProcessor.from_pretrained(layoutlm_model_name)
+        # model_name = "vidore/colqwen2-v1.0"
+        model_name = "vidore/colpali-v1.3-hf"
+
+        # ColPali embeddings for image
+        self.image_embedding_model = ColPaliForRetrieval.from_pretrained(
+            model_name,
+            # torch_dtype=torch.float16,
+            device_map="cuda:0",  # or "mps" if on Apple Silicon
+        ).eval()
+        self.image_processor = ColPaliProcessor.from_pretrained(model_name)
         
         
         # Move models to appropriate device
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.layoutlm_model.to(self.device)
-        
+        self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
+        self.image_embedding_model.to(self.device)
+
+
+      
     def _process_image(self, image_base64: str) -> Dict[str, torch.Tensor]:
         """Process a single image with both models to extract visual and textual features"""
         # try:
             # Load the image
-        image = Image.open(BytesIO(base64.b64decode(image_base64))).convert("RGB")
-        
-        print("Start embedding with LayoutLMv3")
-        # Get CLIP embeddings for visual features
-        layoutlm_inputs = self.layoutlm_processor(
-            text=None,
-            images=image, 
-            return_tensors="pt"
-        ).to(self.device)
-        
-        with torch.no_grad():
-            layoutlm_outputs = self.layoutlm_model(**layoutlm_inputs)
-            # Extract the image embeddings from the last hidden state
-            # Taking the first token's embedding as the image representation
-            layoutlm_embedding = layoutlm_outputs.last_hidden_state[:, 0, :].cpu().numpy()
-        
-        print("LayoutLMv3 embedding done")
+        image = Image.open(BytesIO(base64.b64decode(image_base64)))
 
+
+        with torch.no_grad():
+            batch_images = self.image_processor(images=[image], return_tensors="pt").to(self.device)
+            image_embeddings = self.image_embedding_model(**batch_images).embeddings
+            image_embedding = image_embeddings[0].cpu().numpy()
         
         # Combine the embeddings (simple concatenation with normalization)
         # combined = np.concatenate([
         #     clip_embedding / np.linalg.norm(clip_embedding),
-        #     layoutlm_embedding / np.linalg.norm(layoutlm_embedding)
+        #     image_embedding / np.linalg.norm(image_embedding)
         # ], axis=1)
         
         # Ensure correct output dimension
-        if layoutlm_embedding.shape[1] > self.embedding_dim:
-            # Use PCA-like dimension reduction (simplified version)
-            layoutlm_embedding = layoutlm_embedding[:, :self.embedding_dim]
-        elif layoutlm_embedding.shape[1] < self.embedding_dim:
-            # Pad with zeros if needed
-            padding = np.zeros((layoutlm_embedding.shape[0], self.embedding_dim - layoutlm_embedding.shape[1]))
-            layoutlm_embedding = np.concatenate([layoutlm_embedding, padding], axis=1)
+        # if image_embedding.shape[1] > self.embedding_dim:
+        #     # Use PCA-like dimension reduction (simplified version)
+        #     image_embedding = image_embedding[:, :self.embedding_dim]
+        # elif image_embedding.shape[1] < self.embedding_dim:
+        #     # Pad with zeros if needed
+        #     padding = np.zeros((image_embedding.shape[0], self.embedding_dim - image_embedding.shape[1]))
+        #     image_embedding = np.concatenate([image_embedding, padding], axis=1)
             
-        return layoutlm_embedding.astype(np.float32)
+        return image_embedding.astype(np.float32)
             
         # except Exception as e:
         #     print(f"Error processing image EMBEDDING: {e}")
@@ -104,11 +100,18 @@ class FinancialMultimodalEmbeddings(Embeddings):
         for doc_str in documents:
             # Check if it's a file path to an image
             if doc_str[:8] == "isImage;":
+
+                print("Start image embedding")
+
                 embedding = self._process_image(doc_str[8:])
                 embeddings.append(embedding[0].tolist())
+                print("Embedding: ", embedding[0].tolist())
+
+                print("Image embedding done")
+
             else:
                 # If it's text, use the text embedder
-                text_embedding = self.openai_embeddings.embed_documents([doc_str])[0]
+                text_embedding = self.text_embedding.embed_documents([doc_str])[0]
                 # Ensure the embedding has the correct dimension
                 # if len(text_embedding) > self.embedding_dim:
                 #     text_embedding = text_embedding[:self.embedding_dim]
@@ -130,7 +133,7 @@ class FinancialMultimodalEmbeddings(Embeddings):
             Query embedding
         """
         # Use text embeddings for queries
-        text_embedding = self.openai_embeddings.embed_query(query)
+        text_embedding = self.text_embedding.embed_query(query)
         
         # Ensure the embedding has the correct dimension
         # if len(text_embedding) > self.embedding_dim:

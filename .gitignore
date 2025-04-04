@@ -165,3 +165,7 @@ chunked_data/
 logs/
 llm_pretrained/
 llm_pretrained_1/
+RAG-data/
+rag-data-draft/
+retrieved_images/
+eval/
