@@ -63,21 +63,24 @@ def create_multi_vector_retriever(
 
     return retriever
 
-def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/rag-data/descriptions.json", id_key = "doc_id"):
+def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/RAG-data/descriptions-MMfin.json", id_key = "doc_id"):
     with open(descriptions_path, 'r') as f:
         descriptions = json.load(f)
 
     img_descriptions = []
     img_base64_list = []
+    img_ids = []
     # img_list = []
 
     for des_img in descriptions:
-        image_path = des_img['image_path']
+        image_path = des_img['path']
         image_desc = des_img['description']
+        image_id = des_img['id']
         image_base64 = encode_image(image_path)
         
         img_base64_list.append(image_base64)
         img_descriptions.append(image_desc)
+        img_ids.append(image_id)
 
         # img_list.append(Image.open(image_path))
         # image.show()
@@ -86,8 +89,8 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
     # retriever = create_multi_vector_retriever(id_key = "doc_id")
     # print("\n\n", img_base64_list)
     # print(img_descriptions)
-    def add_documents(retriever, doc_descriptions, doc_contents):
-        doc_ids = [str(uuid.uuid4()) for _ in doc_contents]
+    def add_documents(retriever, doc_descriptions, doc_contents, doc_ids):
+        # doc_ids = [str(uuid.uuid4()) for _ in doc_contents]
         description_docs = [
             Document(page_content=desc, metadata={id_key: doc_ids[i], "type": "text"})
             for i, desc in enumerate(doc_descriptions)
@@ -102,17 +105,70 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
             Document(page_content=doc, metadata={id_key: doc_ids[i], "type": "image"})
             for i, doc in enumerate(doc_contents)
         ]
+
+        print("Storing descriptions")
         retriever.vectorstore.add_documents(description_docs)
+
+        print("Storing doc embeddings")
         retriever.vectorstore.add_documents(docs_to_embed)
+
+        print("Storing original docs")
         retriever.docstore.mset(list(zip(doc_ids, original_docs)))
 
     # Add image_base64s
-    if img_descriptions:
-        add_documents(retriever, img_descriptions, img_base64_list)
+    # if img_descriptions:
+    add_documents(retriever, img_descriptions, img_base64_list, img_ids)
+    print("Docs stored to database")
 
 
 
-    # query = "How's the institutional rating of Amazon"
+def retrieve_best_image(query, retriever) -> Document:
+    retrieved_content = retriever.invoke(query, limit=2)
+    # print("len(retrieved_content): ", len(retrieved_content))
+    best_match_image = retrieved_content[0]
+    return best_match_image
+
+def retrieve_top_k_images(query, retriever, limit=2) -> list[Document]:
+    retrieved_content = retriever.invoke(query, limit=limit)
+    print("len(retrieved_content): ", len(retrieved_content))
+    top_k = retrieved_content[:k]
+    # top_k_images = [rc.page_content for rc in top_k]
+    return top_k
+
+def retrieve_with_image(image_path, retriever, limit=1) -> list[Document]:
+    image_base64 = encode_image(image_path)
+    image_base64 = "isImage;" + image_base64
+    retrieved_content = retriever.invoke(image_base64, limit=limit)
+    return retrieved_content
+
+
+if __name__ == "__main__":
+    query = "What's the current price of Microchip"
+    retriever = create_multi_vector_retriever(id_key = "doc_id")
+    store_data_to_retriever(retriever)
+    retrieved_content = retrieve_best_image(query, retriever)
+    
+    # Extract the base64 string from the document
+    base64_data = retrieved_content.page_content
+    
+    # Decode the base64 string to binary data
+    import base64
+    from io import BytesIO
+    image_data = base64.b64decode(base64_data)
+    
+    # Save the binary data to a file
+    output_path = "retrieved_image.png"
+    with open(output_path, "wb") as f:
+        f.write(image_data)
+    
+    print(f"Retrieved image saved to {output_path}")
+
+    print(retrieved_content)
+
+
+
+
+# query = "How's the institutional rating of Amazon"
     # retrieved_content = retriever_multi_vector_img.invoke(query)
     # best_match_image = retrieved_content[0].page_content
     # return best_match_image
@@ -178,24 +234,3 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
     # else:
     #     print("No images retrieved")
 
-
-def retrieve_best_image(query, retriever):
-    retrieved_content = retriever.invoke(query)
-    print("len(retrieved_content): ", len(retrieved_content))
-    best_match_image = retrieved_content[0].page_content
-    return best_match_image
-
-def retrieve_top_k_images(query, retriever, k=2):
-    retrieved_content = retriever.invoke(query)
-    print("len(retrieved_content): ", len(retrieved_content))
-    top_k = retrieved_content[:k]
-    top_k_images = [rc.page_content for rc in top_k]
-    return top_k_images
-
-
-if __name__ == "__main__":
-    query = "What's the current price of Microchip"
-    retriever = create_multi_vector_retriever(id_key = "doc_id")
-    store_data_to_retriever(retriever)
-    retrieved_content = retrieve_best_image(query, retriever)
-    print(retrieved_content)

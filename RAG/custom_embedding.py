@@ -71,13 +71,13 @@ class FinancialMultimodalEmbeddings(Embeddings):
         # ], axis=1)
         
         # Ensure correct output dimension
-        # if image_embedding.shape[1] > self.embedding_dim:
-        #     # Use PCA-like dimension reduction (simplified version)
-        #     image_embedding = image_embedding[:, :self.embedding_dim]
-        # elif image_embedding.shape[1] < self.embedding_dim:
-        #     # Pad with zeros if needed
-        #     padding = np.zeros((image_embedding.shape[0], self.embedding_dim - image_embedding.shape[1]))
-        #     image_embedding = np.concatenate([image_embedding, padding], axis=1)
+        if image_embedding.shape[1] > self.embedding_dim:
+            # Use PCA-like dimension reduction (simplified version)
+            image_embedding = image_embedding[:, :self.embedding_dim]
+        elif image_embedding.shape[1] < self.embedding_dim:
+            # Pad with zeros if needed
+            padding = np.zeros((image_embedding.shape[0], self.embedding_dim - image_embedding.shape[1]))
+            image_embedding = np.concatenate([image_embedding, padding], axis=1)
             
         return image_embedding.astype(np.float32)
             
@@ -101,13 +101,13 @@ class FinancialMultimodalEmbeddings(Embeddings):
             # Check if it's a file path to an image
             if doc_str[:8] == "isImage;":
 
-                print("Start image embedding")
+                # print("Start image embedding")
 
                 embedding = self._process_image(doc_str[8:])
                 embeddings.append(embedding[0].tolist())
-                print("Embedding: ", embedding[0].tolist())
+                # print("Embedding: ", embedding[0].tolist())
 
-                print("Image embedding done")
+                # print("Image embedding done")
 
             else:
                 # If it's text, use the text embedder
