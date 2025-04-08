@@ -170,3 +170,5 @@ rag-data-draft/
 retrieved_images/
 eval/
 results/
+eval-results-finetunedModel/
+eval-results-RAG/

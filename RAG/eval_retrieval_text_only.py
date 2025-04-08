@@ -1,6 +1,6 @@
 import json
 import argparse
-from retrieve import create_multi_vector_retriever, store_data_to_retriever, retrieve_best_image, retrieve_top_k_images
+from retrieve_text_only import create_multi_vector_retriever, store_data_to_retriever, retrieve_best_image, retrieve_top_k_images
 # from generate import generate_answer
 
 def main(descriptions_path, questions_path, num_retrieve):

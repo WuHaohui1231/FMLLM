@@ -36,8 +36,9 @@ def create_multi_vector_retriever(
     """
 
 
-    # embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
-    embedding_function = FinancialMultimodalEmbeddings()
+    embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
+    # embedding_function = FinancialMultimodalEmbeddings()
+
     # index = faiss.IndexFlatL2(len(embedding_function.embed_query("hello world")))
     index = faiss.IndexFlatIP(len(embedding_function.embed_query("hello world")))
     # Create a vector store
@@ -66,9 +67,19 @@ def create_multi_vector_retriever(
 
     return retriever
 
-def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/RAG-data/descriptions-MMfin.json", id_key = "doc_id"):
-    with open(descriptions_path, 'r') as f:
-        descriptions = json.load(f)
+def store_data_to_retriever(
+        retriever, 
+        descriptions_path = "/model/haohui/FMLLM/RAG-data/descriptions-MMfin.json", 
+        id_key = "doc_id",
+        by_path = True,
+        data_dict = None,
+    ):
+
+    if by_path:
+        with open(descriptions_path, 'r') as f:
+            descriptions = json.load(f)
+    else:
+        descriptions = data_dict
 
     img_descriptions = []
     img_base64_list = []
@@ -99,10 +110,10 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
             for i, desc in enumerate(doc_descriptions)
         ]
 
-        docs_to_embed = [
-            Document(page_content="isImage;" + doc, metadata={id_key: doc_ids[i], "type": "image_to_embed"})
-            for i, doc in enumerate(doc_contents)
-        ]
+        # docs_to_embed = [
+        #     Document(page_content="isImage;" + doc, metadata={id_key: doc_ids[i], "type": "image_to_embed"})
+        #     for i, doc in enumerate(doc_contents)
+        # ]
 
         original_docs = [
             Document(page_content=doc, metadata={id_key: doc_ids[i], "type": "image"})
@@ -112,8 +123,8 @@ def store_data_to_retriever(retriever, descriptions_path = "/model/haohui/FMLLM/
         print("Storing descriptions")
         retriever.vectorstore.add_documents(description_docs)
 
-        print("Storing doc embeddings")
-        retriever.vectorstore.add_documents(docs_to_embed)
+        # print("Storing doc embeddings")
+        # retriever.vectorstore.add_documents(docs_to_embed)
 
         print("Storing original docs")
         retriever.docstore.mset(list(zip(doc_ids, original_docs)))
@@ -133,7 +144,7 @@ def retrieve_best_image(query, retriever) -> Document:
 
 def retrieve_top_k_images(query, retriever, limit=2) -> list[Document]:
     retrieved_content = retriever.invoke(query, limit=limit)
-    # print("len(retrieved_content): ", len(retrieved_content))
+    print("len(retrieved_content): ", len(retrieved_content))
     top_k = retrieved_content[:limit]
     # top_k_images = [rc.page_content for rc in top_k]
     return top_k
