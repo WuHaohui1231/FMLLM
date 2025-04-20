@@ -30,6 +30,9 @@ python example.py --data path_to_input_data --output_dir directory_to_store_resu
 
 ## Architecture
 
+![RAG Architecture](docs/RAG.png)
+
+
 Our approach consists of two main components:
 
 1. **Domain-Specialized MLLM**:
