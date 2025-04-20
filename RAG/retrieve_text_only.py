@@ -48,7 +48,7 @@ def create_multi_vector_retriever(
         index=index,
         docstore=InMemoryDocstore(),
         index_to_docstore_id={},
-        distance_strategy=DistanceStrategy.MAX_INNER_PRODUCT
+        distance_strategy=DistanceStrategy.COSINE
     )
 
     # Initialize the storage layer

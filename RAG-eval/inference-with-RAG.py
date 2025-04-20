@@ -3,6 +3,16 @@ import torch
 from transformers import AutoModelForImageTextToText, AutoTokenizer, AutoModelForCausalLM, AutoProcessor
 from PIL import Image
 from PIL.Image import Resampling
+import base64
+from io import BytesIO
+
+# import sys
+# import os
+# sys.path.append(os.path.join(os.path.dirname(os.path.dirname(__file__))))
+
+import sys
+sys.path.insert(0, '/model/haohui/FMLLM/RAG')
+from retrieve_text_only import create_multi_vector_retriever, retrieve_best_image, store_data_to_retriever
 
 
 # prompt_template = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
@@ -14,7 +24,7 @@ from PIL.Image import Resampling
 
 system_prompt = "You are a financial analyst. You are given a finance-related image and a question. Answer the question accurately based on the information shown in the image."
 
-def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
+def inference_textInput_with_RAG(model_name_or_path, questions_path, descriptions_path, save_path):
     """
     Run inference on Llama 3.2 Vision model with an image and question.
     
@@ -55,21 +65,30 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
         questions = json.load(f)
     # Process inputs (handles text and image together)
 
-    QA_pairs = []
+
+    retriever = create_multi_vector_retriever()
+    store_data_to_retriever(retriever, descriptions_path)
+
+
+    QA_pairs_w_predictions = []
 
     print(f"\nTotal # questions: {len(questions)}\n\n\n")
     i = 1
     for question_dict in questions:
         question = question_dict["question"]
+
+        # Not actually used for inference. Jut put in output file for easy evaluation later
         image_id = question_dict["image_id"]
         image_path = question_dict["image_path"]
         GT_answer = question_dict["GT_answer"]
-       
 
-        image = Image.open(image_path).convert("RGB")
-        # Resize the image to 1120x1120
-        # image = image.resize((1120, 1120), Resampling.LANCZOS)
-        # print(image)
+        retrieved_image_document = retrieve_best_image(question, retriever)
+        retrieved_image_base64 = retrieved_image_document.page_content
+        retrieved_image_id = retrieved_image_document.metadata["doc_id"]
+
+        retrieved_image = Image.open(BytesIO(base64.b64decode(retrieved_image_base64)))
+
+
     
         # Process inputs (handles text and image together)
 
@@ -91,9 +110,9 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
 
         prompt = processor.apply_chat_template(conversation, add_generation_prompt=True,tokenize=False)
 
-        inputs = processor(images=image, text=prompt, return_tensors="pt").to(model.device)
+        # inputs = processor(images=retrieved_image, text=prompt, return_tensors="pt").to(model.device)
         inputs = processor(
-            images=[image],
+            images=retrieved_image,
             text=prompt,
             return_tensors="pt"
         ).to(device)
@@ -116,14 +135,15 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
         i += 1
         # print(f"Image ID: {doc_uid}")
         print(f"Question: {question}")
+        print(f"Image ID: {image_id}. Retrieved ID: {retrieved_image_id}")
         print(f"Prediction: {response}")
         print("-"*100)
 
-        QA_pairs.append({
+        QA_pairs_w_predictions.append({
             "question": question,
-            # "answer": answer,
             # "doc_uid": doc_uid,
             "image_id": image_id,
+            "retrieved_image_id": retrieved_image_id,
             "image_path": image_path,
             "GT_answer": GT_answer,
             "prediction": response,
@@ -131,7 +151,7 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
 
     print(f"Save inference results to {save_path}")
     with open(save_path, "w") as f:
-        json.dump(QA_pairs, f, indent=4)
+        json.dump(QA_pairs_w_predictions, f, indent=4)
     
     # return assistant_answer
 
@@ -139,11 +159,40 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
 
 if __name__ == "__main__":
     # Example usage
-    model_path = "/model/haohui/models/pt-ft/31-30l-nonfreeze-ft"
+    # model_path = "/model/haohui/models/pt-ft/31-30l-nonfreeze-ft"
     # model_path = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-    questions_path = "/model/haohui/FMLLM/RAG-data/QAs-TAT-DQA.json"
-    save_path = f"/model/haohui/FMLLM/RAG-eval/tatdqa-{model_path[-7:]}-groundtruth-RAG-infer-result.json"
+    # questions_path = "/model/haohui/FMLLM/RAG-data/questions-TAT-DQA.json"
+    # save_path = f"/model/haohui/FMLLM/RAG-eval/tatdqa-groundtruth-RAG-infer-result.json"
+
+    import argparse
     
-    response = run_llama_vision_inference(model_path, questions_path, save_path)
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description='Run inference with RAG')
+    parser.add_argument('--dataset', type=str,
+                        help='Path to the dataset containing questions')
+    parser.add_argument('--model', type=str,
+                        help='Model name or path')
+    
+    
+    # Parse arguments
+    args = parser.parse_args()
+
+    dataset_to_descriptions_path = {
+        "mmfin": "/model/haohui/FMLLM/RAG-data/descriptions-MMfin.json",
+        "tatdqa": "/model/haohui/FMLLM/RAG-data/descriptions-TAT-DQA.json",
+    }
+    dataset_to_questions_path = {
+        "mmfin": "/model/haohui/FMLLM/RAG-data/QAs-MMfin.json",
+        "tatdqa": "/model/haohui/FMLLM/RAG-data/QAs-TAT-DQA.json",
+    }
+
+    descriptions_path = dataset_to_descriptions_path[args.dataset]
+    questions_path = dataset_to_questions_path[args.dataset]
+    model_path = args.model
+    save_path = f"/model/haohui/FMLLM/RAG-eval/{args.dataset}-{model_path[-7:]}-RAG-infer-result.json"
+    # Update questions_path if dataset argument is provided
+    # questions_path = args.dataset
+    
+    response = inference_textInput_with_RAG(model_path, questions_path, descriptions_path, save_path)
     # print(f"Question: {question}")
     # print(f"Response: {response}")

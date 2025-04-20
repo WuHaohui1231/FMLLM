@@ -14,7 +14,10 @@ You are a financial analyst. You are given a image of a page (or multiple pages 
 
 system_prompt = """You are a financial analyst. You are given a image of a page (or multiple pages concatenated vertically) from a financial report, and a question.\
 Answer the question accurately based on the information shown in the provided image.\
-Please only output the correctanswer with scale (including `None`, `thousand`, `million`, `billion` and `percent`), no other text."""
+Your answer should be a json list with two elements for answer and scale. The answer itself is a list containing one or more elements. like this:
+[["answer1", "answer2", ...], "scale"]
+
+"""
 
 def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
     """
@@ -169,8 +172,9 @@ if __name__ == "__main__":
     # Example usage
     # model_path = "/model/haohui/models/pt-ft/31-30l-nonfreeze-ft"
     model_path = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-    questions_path = "/model/haohui/tatdqa-data/tat-dqa_train_QAs_Q-format.json"
-    save_path = f"/model/haohui/FMLLM/tatdqa-infer-result-llama-v-ins-ori.json"
+    # questions_path = "/model/haohui/tatdqa-data/tat-dqa_train_QAs_Q-format.json"
+    questions_path = "/model/haohui/tatdqa-data/tatdqa_dataset_test_gold.json"
+    save_path = f"/model/haohui/FMLLM/tatdqa-test-infer-result-llama-v-ins-ori.json"
     
     response = run_llama_vision_inference(model_path, questions_path, save_path)
     # print(f"Question: {question}")

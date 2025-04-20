@@ -63,6 +63,7 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
         question = question_dict["question"]
         image_id = question_dict["image_id"]
         image_path = question_dict["image_path"]
+        GT_answer = question_dict["GT_answer"]
        
 
         image = Image.open(image_path).convert("RGB")
@@ -124,6 +125,7 @@ def run_llama_vision_inference(model_name_or_path, questions_path, save_path):
             # "doc_uid": doc_uid,
             "image_id": image_id,
             "image_path": image_path,
+            "GT_answer": GT_answer,
             "prediction": response,
         })
 
@@ -139,8 +141,8 @@ if __name__ == "__main__":
     # Example usage
     model_path = "/model/haohui/models/pt-ft/31-30l-nonfreeze-ft"
     # model_path = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-    questions_path = "/model/haohui/FMLLM/RAG-data/questions-TAT-DQA.json"
-    save_path = f"/model/haohui/FMLLM/RAG-eval/tatdqa-groundtruth-RAG-infer-result.json"
+    questions_path = "/model/haohui/FMLLM/RAG-data/QAs-MMfin.json"
+    save_path = f"/model/haohui/FMLLM/RAG-eval/mmfin-{model_path[-7:]}-groundtruth-RAG-infer-result.json"
     
     response = run_llama_vision_inference(model_path, questions_path, save_path)
     # print(f"Question: {question}")
