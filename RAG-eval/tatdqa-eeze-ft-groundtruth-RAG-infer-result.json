@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "What is the amount of Teradyne's net deferred tax assets as of December 31, 2019, and how does it compare to the amount as of December 31, 2018?",
+        "image_id": "tatdqa-75",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-75.png",
+        "prediction": "As of December 31, 2019, Teradyne's net deferred tax assets were $61,115,000, which is an increase of $4,195,000 compared to the amount as of December 31, 2018 ($56,920,000)."
+    },
+    {
+        "question": "What was the total amount of long-term debt obligations due after five years as of September 29, 2019?",
+        "image_id": "tatdqa-162",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-162.png",
+        "prediction": "$861,443"
+    },
+    {
+        "question": "What was the percentage of operating revenues from the USA for the year ended December 31, 2017, and how did it change by 2019?",
+        "image_id": "tatdqa-85",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-85.png",
+        "prediction": "The percentage of operating revenues from the USA for the year ended December 31, 2017, was 12.2%, and it decreased to 6.6% by 2019."
+    },
+    {
+        "question": "What was the total deferred tax asset for OpenText as of June 30, 2019, and how does it compare to the total deferred tax asset as of June 30, 2018?",
+        "image_id": "tatdqa-115",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-115.png",
+        "prediction": "The total deferred tax asset for OpenText as of June 30, 2019, was $1,112,987, which is a decrease of $80,924 compared to the total deferred tax asset of $1,219,725 as of June 30, 2018."
+    },
+    {
+        "question": "What was the increase in goodwill for the Complementary segment from fiscal year 2018 to 2019, and what were the key acquisitions that contributed to this change?",
+        "image_id": "tatdqa-165",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-165.png",
+        "prediction": "The goodwill for the Complementary segment increased by $3,999 from fiscal year 2018 to 2019. This change was primarily driven by the acquisitions of BOLTS Technologies, Inc. and Agiletics, Inc."
+    },
+    {
+        "question": "What was the percentage increase in New Zealand Food's sales per square meter for FY19 compared to F18, and how does this relate to trading space reduction?\n\n",
+        "image_id": "tatdqa-83",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-83.png",
+        "prediction": "New Zealand Food's sales per square meter increased by 6.4% for FY19 compared to F18, which is attributed to strong sales growth and a 2.0% reduction in trading space following store closures."
+    },
+    {
+        "question": "What was the total fair value of CTS Corporation's pension plan assets as of December 31, 2019, and what percentage of this was in bond funds (other)?",
+        "image_id": "tatdqa-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-2.png",
+        "prediction": "The total fair value of pension plan assets as of December 31, 2019, was $282,696,000. Bond funds (other) accounted for 207,901,000 / 282,696,000 = 73.6% of the total."
+    },
+    {
+        "question": "What was the percentage change in wireless revenue for Rogers Communications Inc. from 2017 to 2018?",
+        "image_id": "tatdqa-12",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-12.png",
+        "prediction": "The percentage change in wireless revenue for Rogers Communications Inc. from 2017 to 2018 was 7%."
+    },
+    {
+        "question": "What was the percentage increase in general and administrative expenses for the year ended December 31, 2019, compared to 2018?",
+        "image_id": "tatdqa-28",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-28.png",
+        "prediction": "The percentage increase in general and administrative expenses for the year ended December 31, 2019, compared to 2018 was 58.7%."
+    },
+    {
+        "question": "What was the net earnings per share available to common shareholders on a diluted basis for the fiscal year 2019?",
+        "image_id": "tatdqa-29",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-29.png",
+        "prediction": "$5.25"
+    },
+    {
+        "question": "What was the net cash used in investing activities in 2019, and how does it compare to 2018, particularly in terms of major acquisitions and capital expenditures?",
+        "image_id": "tatdqa-104",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-104.png",
+        "prediction": "The net cash used in investing activities in 2019 was $393.8 million, compared to $113.6 million in 2018. This significant increase can be attributed to major acquisitions such as Artsyn's Embedded Power business and capital expenditures."
+    },
+    {
+        "question": "What was the total operating income for the three months ended December 31, 2019, and how did it compare to the operating income for the same period in 2018?",
+        "image_id": "tatdqa-117",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-117.png",
+        "prediction": "$460 million, which is an increase of $113 million compared to the $346 million reported in 2018."
+    },
+    {
+        "question": "What was the change in accrued liabilities from March 31, 2018, to March 31, 2019, and what main factor contributed to this change?",
+        "image_id": "tatdqa-96",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-96.png",
+        "prediction": "The change in accrued liabilities from March 31, 2018, to March 31, 2019, was a decrease of $18.4 million. The main factor contributing to this change was a significant reduction in accrued expenses and other liabilities, which decreased from $240.3 million in 2018 to $114.5 million in 2019."
+    },
+    {
+        "question": "What was the primary reason for the decrease in net cash provided by operating activities from 2018 to 2019, according to the financial report?",
+        "image_id": "tatdqa-169",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-169.png",
+        "prediction": "The primary reason for the decrease in net cash provided by operating activities from 2018 to 2019 was due to the effect of working capital adjustments, including a $2.43 billion decrease in receivables and a $1.53 billion increase in inventory."
+    },
+    {
+        "question": "What was the total value of amortized cost for municipal and corporate bonds as of December 31, 2018?",
+        "image_id": "tatdqa-132",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-132.png",
+        "prediction": "$93,301"
+    },
+    {
+        "question": "What was the amount allocated to the allowance for doubtful accounts for Rogers Communications Inc. as of December 31, 2019?",
+        "image_id": "tatdqa-20",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-20.png",
+        "prediction": "$15 million"
+    },
+    {
+        "question": "What was the total gross carrying value of intangible assets acquired by Black Knight, Inc. as of the year ended December 31, 2019, and what were the weighted average estimated useful lives of computer software and client relationships?",
+        "image_id": "tatdqa-54",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-54.png",
+        "prediction": "The total gross carrying value of intangible assets acquired was $30.8 million. The weighted average estimated useful life of computer software was 5 years, while that of client relationships was 10 years."
+    },
+    {
+        "question": "What was the trend in Micron's diluted earnings (loss) per share from 2015 to 2019, and how did it change in 2019 compared to the previous year?",
+        "image_id": "tatdqa-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-9.png",
+        "prediction": "Micron's diluted earnings (loss) per share decreased from $2.47 in 2015 to $5.51 in 2019. The diluted earnings per share increased by $1.64 in 2019 compared to the previous year, indicating a positive trend."
+    },
+    {
+        "question": "What was the carrying value of goodwill allocated to the cash-generating unit \"Digital\" for the Auto Trader Group plc in both 2019 and 2018, according to the annual report and financial statements?",
+        "image_id": "tatdqa-46",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-46.png",
+        "prediction": "\u00a3342.6 million in 2019 and \u00a3342.6 million in 2018."
+    },
+    {
+        "question": "What were the current trade payables for Spirent Communications plc in 2019, and how do they compare to those in 2018?",
+        "image_id": "tatdqa-43",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-43.png",
+        "prediction": "According to the financial statements, the current trade payables for Spirent Communications plc were $24.6 million in 2019, a decrease from $12.9 million in 2018."
+    },
+    {
+        "question": "What is the range of remaining restructuring spend estimated for the Company's Reinvent SEE strategy as of the end of the year 2019?",
+        "image_id": "tatdqa-150",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-150.png",
+        "prediction": "The remaining restructuring spend estimated for the Company's Reinvent SEE strategy as of the end of the year 2019 is between $60.3 million and $61.7 million."
+    },
+    {
+        "question": "What was the trend in net loss for the company over the years 2017 to 2019, and what implications might this have for future financial strategies?",
+        "image_id": "tatdqa-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-8.png",
+        "prediction": "The company experienced a significant increase in net loss over the years 2017 to 2019, with a substantial drop in 2018 followed by another increase in 2019. This trend suggests a decline in financial performance over the years, which may require the company to reassess its financial strategies to prevent further losses and potentially explore new revenue streams or cost-cutting measures."
+    },
+    {
+        "question": "What is the total value of inventories, including raw materials, finished goods, and work-in-process, for the company as of March 31, 2019?",
+        "image_id": "tatdqa-197",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-197.png",
+        "prediction": "$9,801"
+    },
+    {
+        "question": "What were the total related party revenues for Black Knight, Inc. for the year ended December 31, 2019, and how do they compare to the year ended December 31, 2018?",
+        "image_id": "tatdqa-50",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-50.png",
+        "prediction": "The total related party revenues for Black Knight, Inc. for the year ended December 31, 2019, were $59.5 million. This represents a decrease of $2.1 million compared to the year ended December 31, 2018, which was $57.6 million."
+    },
+    {
+        "question": "What was the trend in subscription solutions revenue from 2017 to 2019, and how did it impact the company's overall revenue growth during these years?",
+        "image_id": "tatdqa-24",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-24.png",
+        "prediction": "The subscription solutions revenue increased by $3,100,000 from 2017 to 2018 and remained stable in 2019, showing a consistent growth trend. This positive trend contributed significantly to the company's overall revenue growth during these years."
+    },
+    {
+        "question": "What was the total amount in thousands of dollars for purchase obligations related to feed grains, feed ingredients, and packaging supplies as of October 31, 2019?",
+        "image_id": "tatdqa-103",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-103.png",
+        "prediction": "$199,097"
+    },
+    {
+        "question": "What was the software license revenue for Altium Limited in 2019, and how did it compare to 2018?",
+        "image_id": "tatdqa-131",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-131.png",
+        "prediction": "The software license revenue for Altium Limited in 2019 was $82,575,000, which is a decrease of $7,540,000 compared to 2018 ($89,115,000)."
+    },
+    {
+        "question": "What was the total net sales for Clearfield, Inc. in the fiscal year 2019, and how does it compare to the total net sales in 2018 and 2017?",
+        "image_id": "tatdqa-23",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-23.png",
+        "prediction": "$85,034,000 (2019) vs. $77,651,000 (2018) vs. $73,948,000 (2017)"
+    },
+    {
+        "question": "What were the amounts of accrued revenue and unearned revenue for Hansen Technologies Ltd in 2019 compared to 2018 according to the Annual Report 2019?",
+        "image_id": "tatdqa-140",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-140.png",
+        "prediction": "According to the report, the company's accrued revenue increased from $5,824,000 in 2018 to $27,817,000 in 2019, while unearned revenue also increased from $22,914,000 in 2018 to $27,069,000 in 2019."
+    },
+    {
+        "question": "What was the percentage change in product sales for Altium Designer licenses between 2018 and 2019?",
+        "image_id": "tatdqa-99",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-99.png",
+        "prediction": "23%"
+    },
+    {
+        "question": "What is the total number of shares beneficially owned by entities affiliated with DAG Ventures as of February 15, 2020, and what percentage of the company's outstanding shares does this represent?",
+        "image_id": "tatdqa-11",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-11.png",
+        "prediction": "Entities affiliated with DAG Ventures beneficially own 543,024 shares, which is approximately 8.0% of the company's outstanding shares."
+    },
+    {
+        "question": "What was the depreciation and amortization expense for the fiscal year ended April 26, 2019, and how did it compare to the previous years ended April 27, 2018, and April 28, 2017?",
+        "image_id": "tatdqa-116",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-116.png",
+        "prediction": "The depreciation and amortization expense for the fiscal year ended April 26, 2019, was $150 million. Compared to the previous years, it increased from $145 million in 2018 and $178 million in 2017."
+    },
+    {
+        "question": "What was the total amount of stock repurchases under the stock repurchase program in 2019, and how does it compare to the amount in 2018?",
+        "image_id": "tatdqa-37",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-37.png",
+        "prediction": "The total amount of stock repurchases under the stock repurchase program in 2019 was $60 million, which is an increase from the $45.484 million in 2018."
+    },
+    {
+        "question": "What were the main factors leading to the net decrease in cash and cash equivalents of \u00a335.8 million for intu properties plc in 2019, as detailed in their annual report?",
+        "image_id": "tatdqa-151",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-151.png",
+        "prediction": "The key drivers of the decrease in cash and cash equivalents were the reduction in operating activities of \u00a311.1 million, a decrease in underlying earnings of \u00a365.9 million, and a reduction in capital expenditures of \u00a3127.7 million."
+    },
+    {
+        "question": "What was the total balance outstanding under the Revolving Credit Facility for CTS Corporation as of December 31, 2019, and how does it compare to the previous year?",
+        "image_id": "tatdqa-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-10.png",
+        "prediction": "The total balance outstanding under the Revolving Credit Facility for CTS Corporation as of December 31, 2019, was $99,700, which represents an increase of $150,000 from the previous year."
+    },
+    {
+        "question": "What was the trend in Adjusted EBITDA from 2015 to 2019 according to the financial report, and which year experienced the highest value?",
+        "image_id": "tatdqa-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-5.png",
+        "prediction": "The trend in Adjusted EBITDA from 2015 to 2019 was an increase, with the highest value recorded in 2019."
+    },
+    {
+        "question": "What was the diluted earnings per share for the fiscal year ended December 27, 2019, and how does it compare to the diluted earnings per share for the fiscal years ended December 28, 2018, and December 29, 2017?",
+        "image_id": "tatdqa-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-3.png",
+        "prediction": "The diluted earnings per share for the fiscal year ended December 27, 2019, was $30,073,338. This represents an increase of $5,144,914 compared to the fiscal year ended December 28, 2018, which was $24,193, and an increase of $4,876,926 compared to the fiscal year ended December 29, 2017, which was $25,196,412."
+    },
+    {
+        "question": "What was VMware, Inc.'s total revenue for Q2 of fiscal year 2020?",
+        "image_id": "tatdqa-31",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-31.png",
+        "prediction": "$5,303 million"
+    },
+    {
+        "question": "What was the average price paid per share during the fiscal year 2018 for the Lifeway share repurchase program, and how does it compare to the average price paid per share in fiscal year 2019?",
+        "image_id": "tatdqa-178",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-178.png",
+        "prediction": "The average price paid per share during the fiscal year 2018 was $6.33, while the average price paid per share in fiscal year 2019 was $2.55."
+    },
+    {
+        "question": "How did the provisions for post-employment benefit plans (employer\u2019s commitments) change from \u20ac344 million on 30/9/2018 to 30/9/2019?",
+        "image_id": "tatdqa-82",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-82.png",
+        "prediction": "The provisions for post-employment benefit plans (employer\u2019s commitments) increased by \u20ac91 million, from \u20ac344 million on 30/9/2018 to \u20ac434 million on 30/9/2019."
+    },
+    {
+        "question": "How did the Adjusted Revenue for the company change from 2014 to 2018, and what were the primary adjustments applied to reconcile total net revenue to Adjusted Revenue during these years?",
+        "image_id": "tatdqa-119",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-119.png",
+        "prediction": "The Adjusted Revenue for the company increased from $276,310K in 2014 to $3,298,177K in 2018. The primary adjustments applied to reconcile total net revenue to Adjusted Revenue during these years included subtracting transaction-based costs, bitcoin costs, and adding deferred revenue adjustments related to purchase accounting."
+    },
+    {
+        "question": "What was the carrying value in denominated currency of the Colombian Credit Facility at the end of 2019, and what was its interest rate?",
+        "image_id": "tatdqa-84",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-84.png",
+        "prediction": "The carrying value in denominated currency of the Colombian Credit Facility at the end of 2019 was $109,193.8, and its interest rate was 8.13%."
+    },
+    {
+        "question": "What was the fair value of plan assets at the end of the year 2019, and how does it compare to the beginning of the same year?",
+        "image_id": "tatdqa-112",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-112.png",
+        "prediction": "$556,967 (end of 2019) compared to $499,791 (beginning of 2019)"
+    },
+    {
+        "question": "What is the individual payout amount for Amy L. Cappellanti-Wolf for the fiscal year 2019 according to the FY19 EAIP NEO Payout Amounts table?",
+        "image_id": "tatdqa-144",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-144.png",
+        "prediction": "$109,648"
+    },
+    {
+        "question": "What was the net stock-based compensation expense for CTS Corporation for the year ended December 31, 2019?",
+        "image_id": "tatdqa-160",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-160.png",
+        "prediction": "$5,015,000"
+    },
+    {
+        "question": "What percentage of inventory purchases in 2019 was accounted for by Supplier A, and how does this compare to the accounts payable percentage for the same supplier in the same year?",
+        "image_id": "tatdqa-94",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-94.png",
+        "prediction": "Supplier A accounted for 31% of inventory purchases in 2019, while their accounts payable percentage for the same year was 30%."
+    },
+    {
+        "question": "What were the expected volatilities used to calculate the fair value of the derivative feature in December 31, 2018, and December 31, 2019?",
+        "image_id": "tatdqa-123",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-123.png",
+        "prediction": "The expected volatilities used to calculate the fair value of the derivative feature were 1.52% for December 31, 2018, and 1.33% for December 31, 2019."
+    },
+    {
+        "question": "How did the change in retail high-speed Internet net activations in 2019 compare to the previous year, and what factors were attributed to this change?",
+        "image_id": "tatdqa-109",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-109.png",
+        "prediction": "Retail high-speed Internet net activations grew by 16.5% in 2019 compared to the previous year, attributed to greater activations in expanding fixed WTP and FTTP footprints, combined with higher pull-through from Alt TV, and increased deactivations resulting from aggressive offers from cable competitors."
+    },
+    {
+        "question": "What was the total amortization of purchased intangible assets in millions for the year ended July 28, 2018, and how did it compare to the previous year?",
+        "image_id": "tatdqa-77",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-77.png",
+        "prediction": "$860 million in 2018, a 38% decrease from $861 million in 2017."
+    },
+    {
+        "question": "What was the largest component of other liabilities for GreenSky, Inc. as of December 31, 2019, and how did its amount compare to December 31, 2018?",
+        "image_id": "tatdqa-89",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-89.png",
+        "prediction": "The largest component of other liabilities for GreenSky, Inc. as of December 31, 2019, was tax-related liabilities, with an amount of $873. This represents an increase from $412 as of December 31, 2018."
+    },
+    {
+        "question": "What was the recorded investment for Global Financing Receivables at the end of 2019, and how did it compare to the previous year?",
+        "image_id": "tatdqa-34",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-34.png",
+        "prediction": "The recorded investment for Global Financing Receivables at the end of 2019 was $22,446 million, a decrease of $31,182 million from the previous year."
+    },
+    {
+        "question": "What is the total compensation earned by Darcy Antonellis for fiscal year 2019 according to the 2019 Director Compensation Table?",
+        "image_id": "tatdqa-95",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-95.png",
+        "prediction": "$205,320"
+    },
+    {
+        "question": "What was the net sales reported for the fiscal year ended May 26, 2019, and how did the adoption of Topic 606 affect this figure?",
+        "image_id": "tatdqa-145",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-145.png",
+        "prediction": "The net sales reported for the fiscal year ended May 26, 2019, was $9,538.4 million. The adoption of Topic 606 resulted in an adjustment of $(15.5) million, leading to a net sales figure of $9,553.9 million without the adoption of Topic 606."
+    },
+    {
+        "question": "What was the percentage increase in research and development expenses for Shopify from 2018 to 2019?",
+        "image_id": "tatdqa-66",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-66.png",
+        "prediction": "The research and development expenses increased by 69.6% from 2018 to 2019."
+    },
+    {
+        "question": "What was the change in other financial income and expenses, specifically for hedging transactions, from the fiscal year 2017/18 to 2018/19 according to the Metro Annual Report?",
+        "image_id": "tatdqa-63",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-63.png",
+        "prediction": "According to the report, the change in other financial income and expenses, specifically for hedging transactions, was a decrease of \u20ac116 million from \u20ac126 million in 2017/18 to \u20ac12 million in 2018/19."
+    },
+    {
+        "question": "What was the amount of total net deferred gain classified as current for the financial year ended 31 March 2019?",
+        "image_id": "tatdqa-98",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-98.png",
+        "prediction": "$375.0 million"
+    },
+    {
+        "question": "What is the total number of shares remaining available for future issuance under Accenture's equity compensation plans as of August 31, 2019?",
+        "image_id": "tatdqa-52",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-52.png",
+        "prediction": "The total number of shares remaining available for future issuance under Accenture's equity compensation plans as of August 31, 2019 is 47,139,181."
+    },
+    {
+        "question": "How did the income tax benefit change from 2018 to 2019, in terms of amount and percentage of pre-tax loss?",
+        "image_id": "tatdqa-53",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-53.png",
+        "prediction": "The income tax benefit increased by $0.6 million from $6.7 million in 2018 to $7.3 million in 2019, which is a 9% increase relative to the pre-tax loss of $39 million."
+    },
+    {
+        "question": "What was the total consolidated R&D and innovation expenditure for Tata Consultancy Services Limited in FY 2019, and what percentage of total turnover did it represent?",
+        "image_id": "tatdqa-168",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-168.png",
+        "prediction": "The total consolidated R&D and innovation expenditure for Tata Consultancy Services Limited in FY 2019 was \u20b91,660 crore, which represents 1.1% of total turnover."
+    },
+    {
+        "question": "What were the total restructuring liabilities for Extreme Networks, Inc. as of June 30, 2019, and how do they compare to the total as of June 30, 2018?",
+        "image_id": "tatdqa-61",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-61.png",
+        "prediction": "The total restructuring liabilities for Extreme Networks, Inc. as of June 30, 2019, were $1,764 thousand, which is a decrease from $1,797 thousand as of June 30, 2018."
+    },
+    {
+        "question": "What were the high and low stock prices during the third quarter of the fiscal year ended April 28, 2018, for the company trading under the symbol \"MEI\"?",
+        "image_id": "tatdqa-161",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-161.png",
+        "prediction": "The high stock price during the third quarter of the fiscal year ended April 28, 2018, was $48.44, while the low stock price was $39.00."
+    },
+    {
+        "question": "What was the primary driver for the $90.9 million increase in personnel costs for Insight Enterprises, Inc. between 2018 and 2019?",
+        "image_id": "tatdqa-171",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-171.png",
+        "prediction": "The primary driver for the $90.9 million increase in personnel costs was PCMs and increased variable compensation resulting from increased sales and gross profit."
+    },
+    {
+        "question": "What was the total deferred tax asset for the company as of December 31, 2019, and how does it compare to December 31, 2018?",
+        "image_id": "tatdqa-88",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-88.png",
+        "prediction": "The total deferred tax asset as of December 31, 2019, was $38,112, which is a decrease from $36,296 as of December 31, 2018."
+    },
+    {
+        "question": "What was the change in restructuring costs from 2018 to 2019, and what was the primary reason for this change according to the financial report?",
+        "image_id": "tatdqa-68",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-68.png",
+        "prediction": "The change in restructuring costs from 2018 to 2019 was a decrease of $1.4 million, from $10,647 thousand in 2018 to $8,455 thousand in 2019. According to the report, this decrease was primarily due to lower severance expenses and a general and administrative cost reduction initiative."
+    },
+    {
+        "question": "What was the weighted-average fair value per share granted for RSUs as of April 26, 2019, and how did it compare to the previous two years?",
+        "image_id": "tatdqa-14",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-14.png",
+        "prediction": "$63.40"
+    },
+    {
+        "question": "What was the expected volatility of performance-based stock on January 3, 2020, according to the Leidos Holdings, Inc. financial report?",
+        "image_id": "tatdqa-180",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-180.png",
+        "prediction": "The expected volatility of performance-based stock on January 3, 2020, was 22.02%."
+    },
+    {
+        "question": "How did Micron's net income attributable to the company in 2019 compare to 2018, and what was the percentage of revenue in each year?",
+        "image_id": "tatdqa-128",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-128.png",
+        "prediction": "Micron's net income attributable to the company increased from $5,089 million in 2018 to $6,313 million in 2019, representing a 24.3% increase. The company's revenue also grew, from $20,322 million in 2018 to $23,406 million in 2019, representing a 15.3% increase."
+    },
+    {
+        "question": "What was the total fair value of consideration transferred for the Golden Ridge acquisition by RiceBran Technologies as of December 31, 2019?",
+        "image_id": "tatdqa-25",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-25.png",
+        "prediction": "$7,957 million"
+    },
+    {
+        "question": "What was the change in the number of Class B ordinary shares from June 30, 2018, to June 30, 2019, and what financial activities contributed to this change?",
+        "image_id": "tatdqa-21",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-21.png",
+        "prediction": "The number of Class B ordinary shares decreased by 3,000 (from 129,942,506 to 129,942,506) due to the issuance of 5,253,809 shares for the settlement of RSUs and the vesting of share options that were early exercised."
+    },
+    {
+        "question": "What was the income (loss) from discontinued operations, net of income taxes, for Advanced Energy Industries, Inc. for the year ended December 31, 2019?",
+        "image_id": "tatdqa-157",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-157.png",
+        "prediction": "$8,480"
+    },
+    {
+        "question": "What were the total expected charges for the Transportation Solutions segment in the fiscal 2019 restructuring program according to TE Connectivity Ltd.'s financial statements?",
+        "image_id": "tatdqa-120",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-120.png",
+        "prediction": "$160 million"
+    },
+    {
+        "question": "What was the percentage change in cash flow from investing activities for Cogeco Communications Inc. between the fiscal years ending August 31, 2018, and August 31, 2019?",
+        "image_id": "tatdqa-106",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-106.png",
+        "prediction": "The percentage change in cash flow from investing activities was 78.5%."
+    },
+    {
+        "question": "What was the increase in total segment assets for Technology Development from 2018 to 2019 according to the financial report?",
+        "image_id": "tatdqa-133",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-133.png",
+        "prediction": "The total segment assets for Technology Development increased from $34,823,525 in 2018 to $86,524,060 in 2019."
+    },
+    {
+        "question": "What was the allowance for doubtful accounts balance at the end of the period for the year ended June 30, 2019, and how did it compare to the previous two years?",
+        "image_id": "tatdqa-19",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-19.png",
+        "prediction": "The allowance for doubtful accounts balance at the end of the period for the year ended June 30, 2019, was $434 million. It was lower than the previous two years, $439 million in 2018 and $409 million in 2017."
+    },
+    {
+        "question": "What was the weighted average grant date fair value of PSAs granted during the year ended December 31, 2019?",
+        "image_id": "tatdqa-164",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-164.png",
+        "prediction": "$11.58"
+    },
+    {
+        "question": "What was the percentage change in the cost of revenues for the FinTech and Business Services segment for the fourth quarter of 2019 compared to the fourth quarter of 2018, and what factors contributed to this change?",
+        "image_id": "tatdqa-74",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-74.png",
+        "prediction": "The cost of revenues for the FinTech and Business Services segment increased by 32% to RMB21,520 million for the fourth quarter of 2019 on a year-on-year basis, primarily driven by scale expansion of payment-related services and cloud business."
+    },
+    {
+        "question": "What was the change in total liabilities from 2018 to 2019 according to the Consolidated Balance Sheets Data for December 31?",
+        "image_id": "tatdqa-154",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-154.png",
+        "prediction": "Total liabilities decreased by $1,047.1 million from $5,519.1 million in 2018 to $4,471.9 million in 2019."
+    },
+    {
+        "question": "What were the TORM TCE earnings for the year 2019, and how do they compare to the TCE earnings in 2018 and 2017?",
+        "image_id": "tatdqa-124",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-124.png",
+        "prediction": "The TORM TCE earnings for the year 2019 were $424.9 million, which represents a decrease of $352.4 million compared to the TCE earnings in 2018 ($635.4 million) and an increase of $397.1 million compared to the TCE earnings in 2017 ($424.9 million)."
+    },
+    {
+        "question": "How did the impairment of investment in Golar Partners affect the equity in net earnings of affiliates between 2018 and 2019?",
+        "image_id": "tatdqa-65",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-65.png",
+        "prediction": "The impairment of investment in Golar Partners resulted in a negative impact of $100% on the equity in net earnings of affiliates in 2019, compared to $0% in 2018."
+    },
+    {
+        "question": "What was the cumulative amount of undistributed earnings from the Company's foreign subsidiaries as of December 31, 2019, and how might future distributions of these earnings affect the Company's state income taxes?",
+        "image_id": "tatdqa-191",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-191.png",
+        "prediction": "The cumulative amount of undistributed earnings from the Company's foreign subsidiaries as of December 31, 2019, was $5.3 million. Any future distribution of these earnings may subject the Company to state income taxes, as adjusted for tax credits, and foreign withholding taxes that the Company estimates would be $0.1 million."
+    },
+    {
+        "question": "How did the net periodic benefit cost for the pension plans change from 2017 to 2019?",
+        "image_id": "tatdqa-22",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-22.png",
+        "prediction": "The net periodic benefit cost increased by $0.5 thousand from 2017 to 2019."
+    },
+    {
+        "question": "What were the net unrealized holding gains (losses) for the company\u2019s investments held in the rabbi trust at the end of 2019, and how does this compare to 2018?",
+        "image_id": "tatdqa-166",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-166.png",
+        "prediction": "The net unrealized holding gains (losses) for the company's investments held in the rabbi trust at the end of 2019 was $2,379,000, compared to $(867,000) in 2018."
+    },
+    {
+        "question": "What is the reason for the 44.6% decrease in revenue for sequencing and molecular analysis from $3.1 million in 2018 to $1.7 million in 2019?",
+        "image_id": "tatdqa-56",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-56.png",
+        "prediction": "The reason for the 44.6% decrease is due to the timing of a large DCX customer contract completion and recognition in the current year, which led to fluctuations in revenue."
+    },
+    {
+        "question": "What was the closing balance of the number of stapled securities on issue for June 30, 2019, according to the National Storage REIT Annual Report 2018/2019?",
+        "image_id": "tatdqa-153",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-153.png",
+        "prediction": "The closing balance of the number of stapled securities on issue for June 30, 2019, was 673,928,751."
+    },
+    {
+        "question": "How did the change in foreign operations valuation allowance impact the provision for income taxes for KEMET Corporation in the fiscal year ended March 31, 2018?",
+        "image_id": "tatdqa-190",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-190.png",
+        "prediction": "The change in foreign operations valuation allowance had a negative impact on the provision for income taxes, resulting in a decrease of $(1,337) thousand."
+    },
+    {
+        "question": "What factors contributed to the 16% decrease in the cost of revenues for the year ended December 31, 2019, compared to the year ended December 31, 2018?",
+        "image_id": "tatdqa-45",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-45.png",
+        "prediction": "The 16% decrease in the cost of revenues for the year ended December 31, 2019, compared to the year ended December 31, 2018, was primarily driven by a reduction in the number of global services and cloud infrastructure personnel, which led to a decrease of $2.2 million in compensation and benefits expenses. Additionally, there was a reduction in allocated facilities and information technology costs of $0.5 million in 2019."
+    },
+    {
+        "question": "What were the percentages of wafer sales for communication applications for United Microelectronics Corporation in the years ended December 31, 2017, 2018, and 2019?",
+        "image_id": "tatdqa-184",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-184.png",
+        "prediction": "48.6%, 45.2%, and 52.2%, respectively."
+    },
+    {
+        "question": "What was the total segment revenue for Plexus Corp. in the EMEA region for the fiscal year ended September 28, 2019?",
+        "image_id": "tatdqa-38",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-38.png",
+        "prediction": "$309,933"
+    },
+    {
+        "question": "What were the net cash flows from operating, investing, and financing activities for the fiscal year 2019, and what was the net increase in cash and cash equivalents for that year?",
+        "image_id": "tatdqa-27",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-27.png",
+        "prediction": "The net cash provided by operating activities was $4,421.8 million, the net cash used for investing activities was $2,946.1 million, and the net cash used for financing activities was $(12.7) million. The net increase in cash and cash equivalents was $1,007.4 million."
+    },
+    {
+        "question": "What was the primary driver for the 51% increase in Adjusted EBITDA for Cubic Transportation Systems in fiscal year 2019 compared to fiscal year 2018?",
+        "image_id": "tatdqa-15",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-15.png",
+        "prediction": "The primary driver for the 51% increase in Adjusted EBITDA was primarily driven by the same factors that drove the increase in operating income described above excluding the increases in amortization of purchased intangibles and acquisition transaction costs which are excluded from Adjusted EBITDA."
+    },
+    {
+        "question": "What were the operating accruals for Cogent Communications Holdings, Inc. as of December 31, 2019, and how do they compare to the previous year?",
+        "image_id": "tatdqa-114",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-114.png",
+        "prediction": "According to the notes to the consolidated financial statements, the operating accruals for Cogent Communications Holdings, Inc. as of December 31, 2019, were $23,695 thousand, which is a decrease of $3,261 thousand compared to the previous year."
+    },
+    {
+        "question": "What was the percentage increase in corporate capital expenditures for Plexus Corp. from 2018 to 2019?",
+        "image_id": "tatdqa-60",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-60.png",
+        "prediction": "To calculate the percentage increase, first find the difference between the two years: $5,186M - $4,149M = $1,037M. Then, divide this difference by the original amount and multiply by 100 to get the percentage increase: ($1,037M / $4,149M) * 100 = 25.0%."
+    },
+    {
+        "question": "What was the percentage change in BCE's high-speed Internet retail subscribers from 2018 to 2019?",
+        "image_id": "tatdqa-198",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-198.png",
+        "prediction": "The percentage change in BCE's high-speed Internet retail subscribers from 2018 to 2019 was +4.3%."
+    },
+    {
+        "question": "What is the deficit amount for the vessel \"Golar Arctic\" as of December 31, 2019, based on its market value and carrying value?",
+        "image_id": "tatdqa-148",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-148.png",
+        "prediction": "$72.4M"
+    },
+    {
+        "question": "What was the total amount of goodwill impairment recorded for the years ended December 31, 2018 and 2017, and how did it change from 2017 to 2018?",
+        "image_id": "tatdqa-55",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-55.png",
+        "prediction": "The total goodwill impairment recorded for the years ended December 31, 2018 and 2017 was $9.2 million in 2018 and $8.4 million in 2017, respectively. This represents an increase of $0.8 million or 9.5% from 2017 to 2018."
+    },
+    {
+        "question": "What was the total amount of inventory reserves at the end of the year for December 31, 2019, and how does it compare to December 31, 2018?",
+        "image_id": "tatdqa-122",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-122.png",
+        "prediction": "$982 million at December 31, 2019, compared to $1,134 million at December 31, 2018."
+    },
+    {
+        "question": "What was the total number of restricted stock units outstanding as of August 31, 2019, and what was their weighted-average grant-date fair value?",
+        "image_id": "tatdqa-192",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-192.png",
+        "prediction": "The total number of restricted stock units outstanding as of August 31, 2019, was 7,165,473. The weighted-average grant-date fair value was $26.27."
+    },
+    {
+        "question": "What is the change in total liabilities for Singapore Telecommunications Limited from FY 2018 to FY 2019?",
+        "image_id": "tatdqa-42",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-42.png",
+        "prediction": "The total liabilities decreased by $1,032 million from $48,496 million in FY 2018 to $19,105 million in FY 2019."
+    },
+    {
+        "question": "What were the high and low sales prices for ACUR common stock during the third quarter of the 2019 fiscal year?",
+        "image_id": "tatdqa-101",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-101.png",
+        "prediction": "$0.45 and $0.14"
+    },
+    {
+        "question": "What positions did Ravinder S. Girgla hold at Loral as of March 12, 2020, and what was his career progression within the company?",
+        "image_id": "tatdqa-183",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-183.png",
+        "prediction": "Ravinder S. Girgla held the position of Vice President and Controller since January 2016. He also served as Deputy Controller from February 2013 to January 2016."
+    },
+    {
+        "question": "How did the provision for income taxes change from 2018 to 2019 for the year ended December 31, according to the table, and what was the primary reason for the change in 2019?",
+        "image_id": "tatdqa-13",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-13.png",
+        "prediction": "The provision for income taxes decreased by $198 million from $976 million in 2018 to $955 million in 2019. The primary reason for the decrease was the determination that the deferred tax assets were indefinite-lived and had no realization."
+    },
+    {
+        "question": "What is the total net operating loss carryforward for Everbridge, Inc. as of December 31, 2019, and how does it compare to the previous year?",
+        "image_id": "tatdqa-41",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-41.png",
+        "prediction": "According to the image, Everbridge, Inc. had a total net operating loss carryforward of $50,950 as of December 31, 2019, which is an increase from $34,662 in 2018."
+    },
+    {
+        "question": "What was the net income for the pro forma year ended September 30, 2017, and how does it compare to the pro forma year ended September 30, 2018?",
+        "image_id": "tatdqa-152",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-152.png",
+        "prediction": "The net income for the pro forma year ended September 30, 2017, was $5,809,018. It is higher than the pro forma year ended September 30, 2018, which was $4,794,757."
+    },
+    {
+        "question": "What was the gross margin for the Americas segment in fiscal year 2019 according to the summarized financial information?",
+        "image_id": "tatdqa-187",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-187.png",
+        "prediction": "$20,338 million"
+    },
+    {
+        "question": "What was the cash paid for interest by American Tower Corporation in the year 2018 compared to 2019?",
+        "image_id": "tatdqa-146",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-146.png",
+        "prediction": "According to the document, American Tower Corporation paid $789.7 million in cash for interest in 2018 and $750.2 million in 2019."
+    },
+    {
+        "question": "What is the total amount in thousands of NTS paid to Ernst & Young for audit fees, audit-related fees, and tax fees for the year ended December 31, 2019?",
+        "image_id": "tatdqa-79",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-79.png",
+        "prediction": "$67,078"
+    },
+    {
+        "question": "How did the net property and equipment value change from December 31, 2018, to December 31, 2019, and what factors contributed to this change?",
+        "image_id": "tatdqa-174",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-174.png",
+        "prediction": "The net property and equipment value decreased by $2.9 million from December 31, 2018, to December 31, 2019. This change is primarily driven by a $3.6 million decrease in accumulated depreciation, indicating increased usage or aging assets."
+    },
+    {
+        "question": "What was the highest total compensation received by a continuing director at CenturyLink in 2019, and who received it?",
+        "image_id": "tatdqa-194",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-194.png",
+        "prediction": "The highest total compensation received by a continuing director at CenturyLink in 2019 was $407,472, received by W. Bruce Hanks."
+    },
+    {
+        "question": "What was the percentage increase in operating income for the Enterprise Security segment from fiscal year 2017 to 2018?",
+        "image_id": "tatdqa-110",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-110.png",
+        "prediction": "The percentage increase in operating income for the Enterprise Security segment from fiscal year 2017 to 2018 was 19%."
+    },
+    {
+        "question": "What were the main factors contributing to the increase in Teekay Parent's interest expense from $254.1 million in 2018 to $279.1 million in 2019?",
+        "image_id": "tatdqa-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-4.png",
+        "prediction": "The main factors contributing to the increase in Teekay Parent's interest expense were primarily due to the commencement of Teekay LNG's finance lease obligations upon the deliveries of the Myrina, Megara, and Yamal Spirit LNG carriers, as well as an increase in debt balance to pay for the final newbuilding installments on the Bahrain Spirit and Sean Spirit LNG carrier newbuilding deliveries."
+    },
+    {
+        "question": "What was the volume-weighted average price (VWAP) at the grant date for the Performance Rights Plan shares issued during FY2019, and how does it compare to the FY2018 VWAP?",
+        "image_id": "tatdqa-199",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-199.png",
+        "prediction": "The volume-weighted average price (VWAP) at the grant date for the Performance Rights Plan shares issued during FY2019 was $0.80. This is lower than the FY2018 VWAP of $1.16."
+    },
+    {
+        "question": "How did the change in the discount rate impact the post-employment benefit obligations at December 31, 2019, according to the sensitivity analysis?",
+        "image_id": "tatdqa-185",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-185.png",
+        "prediction": "The change in the discount rate from 0.5% to 1.944% resulted in a decrease of 945 in post-employment benefit obligations."
+    },
+    {
+        "question": "What was the percentage change in General and Administrative (G&A) expenses from July 28, 2018, to July 27, 2019, and what contributed to this change?",
+        "image_id": "tatdqa-36",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-36.png",
+        "prediction": "The percentage change in G&A expenses from July 28, 2018, to July 27, 2019, was a decrease of 4.3%. This decrease was due to a combination of higher headcount-related expenses, higher acquisition-related costs, higher contracted services, and higher discretionary spending."
+    },
+    {
+        "question": "How did the loss from discontinued operations for Netsmart change from 2018 to 2019, and what was the percentage change?",
+        "image_id": "tatdqa-108",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-108.png",
+        "prediction": "The loss from discontinued operations increased from $(11,915) in 2018 to $(500,471) in 2019, representing a percentage change of 4,099.3%."
+    },
+    {
+        "question": "What was the total amount spent on share repurchases for the fiscal year ended August 31, 2018?",
+        "image_id": "tatdqa-173",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-173.png",
+        "prediction": "$450,000"
+    },
+    {
+        "question": "What was the percentage decrease in purchase commitments with contract manufacturers and suppliers by the end of fiscal 2018 compared to July 27, 2019?",
+        "image_id": "tatdqa-59",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-59.png",
+        "prediction": "The percentage decrease in purchase commitments with contract manufacturers and suppliers by the end of fiscal 2018 compared to July 27, 2019 is 23%."
+    },
+    {
+        "question": "What was the year-over-year percentage change in total revenue for International Business Machines Corporation from 2018 to 2019, and how did it compare when adjusted for currency and divested businesses?",
+        "image_id": "tatdqa-189",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-189.png",
+        "prediction": "Total revenue decreased by 3.1% year-over-year from $79,591 million in 2018 to $77,147 million in 2019. When adjusted for currency and divested businesses, the decrease was 0.8%."
+    },
+    {
+        "question": "What were the beginning and ending balances of deferred revenue for the years 2017, 2018, and 2019, and how did the deferral and recognition of revenue impact these balances?",
+        "image_id": "tatdqa-143",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-143.png",
+        "prediction": "The beginning balances of deferred revenue for the years 2017, 2018, and 2019 were $46,193, $40,003, and $45,040, respectively. The ending balances were $42,432, $36,836, and $40,842, respectively. The deferral of revenue increased the balance by $6,492 in 2017, $3,000 in 2018, and $1,000 in 2019. The recognition of deferred revenue decreased the balance by $4,761 in 2017, $4,167 in 2018, and $4,198 in 2019."
+    },
+    {
+        "question": "What was the net profit/loss for the year 2019 for TORM as reported in the consolidated financial statements, and how did it compare to the basic and diluted earnings per share for the same year?",
+        "image_id": "tatdqa-97",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-97.png",
+        "prediction": "The net profit/loss for the year 2019 was $166.0 million. This corresponds to a basic earnings per share of $2.24 and a diluted earnings per share of $2.24."
+    },
+    {
+        "question": "What is the percentage change in Trade Accounts Receivable, current, from December 31, 2018 to December 31, 2019?",
+        "image_id": "tatdqa-111",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-111.png",
+        "prediction": "The percentage change in Trade Accounts Receivable, current, from December 31, 2018 to December 31, 2019 is 3.2%."
+    },
+    {
+        "question": "What was the percentage increase in research, development, and maintenance expenses from 2018 to 2019 for the year ended December 31?",
+        "image_id": "tatdqa-179",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-179.png",
+        "prediction": "The research, development, and maintenance expenses increased from $675,660 in 2018 to $2,672,406 in 2019. The percentage increase is calculated as ((2,672,406 - 675,660) / 675,660) * 100 = 296.6%."
+    },
+    {
+        "question": "What was the total revenue of Navios Maritime Holdings Inc. for the year ended December 31, 2019, and how does it compare to the revenues reported for North America and Europe during the same period?",
+        "image_id": "tatdqa-142",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-142.png",
+        "prediction": "The total revenue of Navios Maritime Holdings Inc. for the year ended December 31, 2019, was $482,449,000. This figure is significantly higher than the revenues reported for North America ($2,259,000) and Europe ($179,009,000) during the same period."
+    },
+    {
+        "question": "What was the total amount of lease receivables under the internal credit risk ratings of 5 to 6 for July 27, 2019?",
+        "image_id": "tatdqa-80",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-80.png",
+        "prediction": "$1,204 million"
+    },
+    {
+        "question": "How did the decrease in the provision for income taxes from 2018 to 2019 affect the effective income tax rate for Verizon Media, and what were the respective rates for each year?",
+        "image_id": "tatdqa-81",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-81.png",
+        "prediction": "The decrease in the provision for income taxes from 2018 to 2019 led to a decrease in the effective income tax rate for Verizon Media. The effective income tax rate decreased from 18.3% in 2018 to 13.0% in 2019."
+    },
+    {
+        "question": "How did the variable remuneration component of wages and salaries change from financial year 2017/18 to 2018/19 for Metro, as outlined in their annual report?",
+        "image_id": "tatdqa-170",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-170.png",
+        "prediction": "The variable remuneration component of wages and salaries increased by \u20ac1 million from \u20ac52 million in 2017/18 to \u20ac81 million in 2018/19."
+    },
+    {
+        "question": "What is the total remuneration amount paid to Independent Directors for the year ended March 31, 2019, including sitting fees, commission, and other specified payments?",
+        "image_id": "tatdqa-126",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-126.png",
+        "prediction": "The total remuneration amount paid to Independent Directors is \u20b91,234.30 lakh."
+    },
+    {
+        "question": "What was the percentage change in developed technology amortization costs from fiscal 2018 to fiscal 2019, and what were the respective amounts for these years?",
+        "image_id": "tatdqa-67",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-67.png",
+        "prediction": "The percentage change in developed technology amortization costs from fiscal 2018 to fiscal 2019 was -13%. The amounts for these years were $857 million in fiscal 2019 and $758 million in fiscal 2018."
+    },
+    {
+        "question": "What was the percent change in salary for Samir Kapuria from FY18 to FY19, and what were the circumstances leading to the salary increase?",
+        "image_id": "tatdqa-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-1.png",
+        "prediction": "Samir Kapuria received a 9% increase in salary from FY18 to FY19, with a salary of $390,000 in FY18 and $440,000 in FY19. The salary increase was approved because he was not receiving a salary increase in FY18."
+    },
+    {
+        "question": "What is the total charge for share-based payments, including NI and apprenticeship levy, for the Auto Trader Group plc in 2019, and how does it compare to 2018?",
+        "image_id": "tatdqa-71",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-71.png",
+        "prediction": "The total charge for share-based payments, including NI and apprenticeship levy, for the Auto Trader Group plc in 2019 was \u00a35.9 million. This represents an increase from \u00a32.3 million in 2018."
+    },
+    {
+        "question": "What was the weighted-average grant date fair value of restricted stock units granted during the year ended December 31, 2019?",
+        "image_id": "tatdqa-163",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-163.png",
+        "prediction": "$16,044"
+    },
+    {
+        "question": "What was the change in the gross margin (in millions) for fiscal 2019 compared to fiscal 2018, and what factors contributed to this change?",
+        "image_id": "tatdqa-193",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-193.png",
+        "prediction": "The gross margin decreased by $351 million from $4,745 million in fiscal 2018 to $4,394 million in fiscal 2019, primarily due to lower volume, unfavorable product mix, negative foreign currency translation, and price erosion, partially offset by lower material costs."
+    },
+    {
+        "question": "How did the total liquidity change between December 31, 2018, and December 31, 2019, and what factors contributed to this change?",
+        "image_id": "tatdqa-159",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-159.png",
+        "prediction": "The total liquidity decreased by $48.0 million from $648.5 million to $382.3 million. This decrease is primarily attributed to the repayment of a $239.0 million revolving credit facility and the payment of $48.0 million for property, equipment, and software."
+    },
+    {
+        "question": "What was the percentage increase in operating income for fiscal year 2019 compared to fiscal year 2018, and what factors contributed to this increase?",
+        "image_id": "tatdqa-118",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-118.png",
+        "prediction": "The operating income increased by 10.1 percent in fiscal year 2019 compared to fiscal year 2018. This increase was primarily driven by higher depreciation, insurance, and acquisition-related costs, partially offset by lower variable compensation expenses."
+    },
+    {
+        "question": "What was the cumulative net derivative gains (losses) from economic hedges recognized in general corporate expenses for the fiscal year ended May 27, 2018?",
+        "image_id": "tatdqa-130",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-130.png",
+        "prediction": "$6.2 million"
+    },
+    {
+        "question": "What was the trend in Voyage Expenses for Nordic American Tankers from 2017 to 2019, and how did this affect the Net Operating (Loss) Income over the same period?",
+        "image_id": "tatdqa-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-7.png",
+        "prediction": "Voyage Expenses increased from $297,141 in 2017 to $317,220 in 2019, indicating an upward trend. This increase in operational costs led to a decrease in Net Operating (Loss) Income from $175,690 in 2017 to $31,971 in 2019."
+    },
+    {
+        "question": "What was the total amount paid as dividends in cash by Woolworths Group for the financial year 2019, and how does it compare to the amount paid in 2018?",
+        "image_id": "tatdqa-172",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-172.png",
+        "prediction": "In 2019, Woolworths Group paid a total of $1,267 million in cash dividends. This represents an increase from the $724 million paid in 2018."
+    },
+    {
+        "question": "What was the total number of ordinary shares issued by Altium Limited in the financial year ending 30 June 2019, and what were their respective issue prices?",
+        "image_id": "tatdqa-155",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-155.png",
+        "prediction": "The total number of ordinary shares issued was 130,511,522, with an issue price of US$0.00."
+    },
+    {
+        "question": "What were the basic earnings per share attributable to OpenText for the year ended June 30, 2018?",
+        "image_id": "tatdqa-39",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-39.png",
+        "prediction": "$242,224"
+    },
+    {
+        "question": "What was the percentage change in total employee expenditure from FY18 to FY19 according to the 2019 Annual Report and Accounts?",
+        "image_id": "tatdqa-135",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-135.png",
+        "prediction": "According to the image, the total employee expenditure increased from $361.9 million in FY18 to $370.1 million in FY19, representing a 2% increase."
+    },
+    {
+        "question": "What was the total remuneration for Key Management of Auto Trader Group plc in the year ending 31 March 2019, and how does it compare to the previous year?",
+        "image_id": "tatdqa-64",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-64.png",
+        "prediction": "The total remuneration for Key Management in the year ending 31 March 2019 was \u00a39.0m, a decrease from the previous year's \u00a310.2m."
+    },
+    {
+        "question": "What was the percentage contribution of fresh vacuum-sealed chicken to net sales dollars in fiscal year 2017 for Sanderson Farms, Inc.?",
+        "image_id": "tatdqa-102",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-102.png",
+        "prediction": "The percentage contribution of fresh vacuum-sealed chicken to net sales dollars in fiscal year 2017 was 39.8%."
+    },
+    {
+        "question": "What was the total interest expense for BCE Inc. in 2019, and how does it compare to 2018?",
+        "image_id": "tatdqa-136",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-136.png",
+        "prediction": "The total interest expense for BCE Inc. in 2019 was $1,132 million, which is an increase of $143 million from the previous year's total interest expense of $989 million."
+    },
+    {
+        "question": "What was the total share-based compensation expense for Agilysys in fiscal year 2018, and how does it compare to fiscal year 2019?",
+        "image_id": "tatdqa-69",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-69.png",
+        "prediction": "$4,688,000 in fiscal year 2018, compared to $4,376,000 in fiscal year 2019."
+    },
+    {
+        "question": "What is the net value of property, plant, and equipment for CTS Corporation as of December 31, 2019, and how does it compare to the value as of December 31, 2018?",
+        "image_id": "tatdqa-91",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-91.png",
+        "prediction": "The net value of property, plant, and equipment for CTS Corporation as of December 31, 2019, is $105,038,000. This represents a decrease of $23,912,000 from the previous year's value of $188,719,000."
+    },
+    {
+        "question": "What was the percentage change in capital expenditures for Rogers Communications Inc.\u2019s Cable segment from 2018 to 2019?",
+        "image_id": "tatdqa-16",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-16.png",
+        "prediction": "(19)"
+    },
+    {
+        "question": "What was the net book value of American Tower Corporation\u2019s acquired tenant-related intangibles as of December 31, 2019, and how does it compare to December 31, 2018?",
+        "image_id": "tatdqa-127",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-127.png",
+        "prediction": "As of December 31, 2019, the net book value of acquired tenant-related intangibles was $8,999.5 million. This represents a decrease from $11,156.5 million as of December 31, 2018."
+    },
+    {
+        "question": "What was the total provision for income taxes for the year ended April 26, 2019, and how does it compare to the provision for the year ended April 27, 2018?",
+        "image_id": "tatdqa-51",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-51.png",
+        "prediction": "The total provision for income taxes for the year ended April 26, 2019, was $1,268 million, while for the year ended April 27, 2018, it was $1,083 million."
+    },
+    {
+        "question": "What was the percentage increase in net sales for Solid Capacitors in fiscal year 2018 compared to fiscal year 2017, and what were the primary factors contributing to this increase?",
+        "image_id": "tatdqa-30",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-30.png",
+        "prediction": "The net sales of Solid Capacitors increased by 34.1% from $575.1 million in fiscal year 2017 to $771.2 million in fiscal year 2018. The primary factors contributing to this increase were the addition of net sales from the TOKIN acquisition and an increase in net sales to the legacy products distributor channel."
+    },
+    {
+        "question": "What is the percentage change in subscription revenue from 2018 to 2019, and what factors contributed to this change?",
+        "image_id": "tatdqa-181",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-181.png",
+        "prediction": "The percentage change in subscription revenue from 2018 to 2019 is 4.6% (calculated as ((542,968 - 473,052) / 473,052) x 100). The increase in subscription revenue is primarily due to the addition of new customers, upsells, cross-sells, and renewals from existing customers."
+    },
+    {
+        "question": "How did the net income (loss) per share for 2019 compare to 2018, and what were the factors influencing net income as noted in the financial report?",
+        "image_id": "tatdqa-107",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-107.png",
+        "prediction": "The net income (loss) per share for 2019 was $0.52, a decrease from $1.42 in 2018. The factors influencing net income include gross profit, net income (loss), basic net income (loss) per share, and diluted net income (loss) per share."
+    },
+    {
+        "question": "What were the operating expenses for Corporate Expenses and Eliminations for the year ended December 31, 2018, and how did they compare to the previous year?",
+        "image_id": "tatdqa-139",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-139.png",
+        "prediction": "The operating expenses for Corporate Expenses and Eliminations were $143 million for the year ended December 31, 2018, a decrease of $44 million compared to $198 million in 2017."
+    },
+    {
+        "question": "What was the expected stock price volatility for the year ended December 31, 2019, and how does it compare to the year ended December 31, 2018?",
+        "image_id": "tatdqa-177",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-177.png",
+        "prediction": "The expected stock price volatility for the year ended December 31, 2019, was 92.34%, while for the year ended December 31, 2018, it was 85.26%."
+    },
+    {
+        "question": "What was the total share-based compensation expense for restricted stock and performance shares for the year ended December 31, 2019, and how does it compare to the previous two years?",
+        "image_id": "tatdqa-147",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-147.png",
+        "prediction": "The total share-based compensation expense for restricted stock and performance shares was $6,836,000 in 2019, $5,119,000 in 2018, and $2,766,000 in 2017."
+    },
+    {
+        "question": "What was the value change in deferred tax assets for METRO AG from 30/9/2018 to 30/9/2019 according to their annual report 2018/19?",
+        "image_id": "tatdqa-72",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-72.png",
+        "prediction": "The value of deferred tax assets decreased from \u20ac329 million to \u20ac191 million, a decrease of \u20ac138 million."
+    },
+    {
+        "question": "What was the constant currency revenue growth percentage for the year ended December 31, 2019, and how does it compare to the revenue growth percentage for the same year?",
+        "image_id": "tatdqa-57",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-57.png",
+        "prediction": "The constant currency revenue growth percentage for the year ended December 31, 2019, was 8.5%, which is higher than the revenue growth percentage of 7.2% for the same year."
+    },
+    {
+        "question": "What was the total value of intangible assets acquired from SmartRG and Sumitomo, and what is the remaining life span in years for the developed technology?",
+        "image_id": "tatdqa-137",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-137.png",
+        "prediction": "$32,060,000 and 7 years"
+    },
+    {
+        "question": "What was the net cash provided by operating activities for the fiscal year ended August 31, 2019, according to the selected consolidated cash flow information?",
+        "image_id": "tatdqa-176",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-176.png",
+        "prediction": "$1,193,066"
+    },
+    {
+        "question": "What is the total accumulated depreciation and amortization for property and equipment as of December 31, 2019?",
+        "image_id": "tatdqa-44",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-44.png",
+        "prediction": "$2,378.2 million"
+    },
+    {
+        "question": "What was the total value of accounts receivable, net, for Advanced Energy Industries, Inc. on December 31, 2019, and how does it compare to December 31, 2018?",
+        "image_id": "tatdqa-141",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-141.png",
+        "prediction": "The total value of accounts receivable, net, for Advanced Energy Industries, Inc. on December 31, 2019, was $246,564. This represents an increase of $6,442 compared to December 31, 2018, when it was $100,442."
+    },
+    {
+        "question": "What was the ending balance for accounts receivable allowances for Coherent, Inc. and Subsidiaries in fiscal year 2019, and how does it compare to the ending balance in 2018?",
+        "image_id": "tatdqa-113",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-113.png",
+        "prediction": "The ending balance for accounts receivable allowances in 2019 was $8,690 thousand, compared to $4,568 thousand in 2018."
+    },
+    {
+        "question": "What was the total sales amount for Coherent, Inc. and Subsidiaries to unaffiliated customers in the United States during fiscal year 2019, and how did it compare to the previous two years?",
+        "image_id": "tatdqa-156",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-156.png",
+        "prediction": "The total sales amount for Coherent, Inc. and Subsidiaries to unaffiliated customers in the United States during fiscal year 2019 was $339,585. Compared to the previous two years, it increased from $309,495 in 2018 and $297,699 in 2017."
+    },
+    {
+        "question": "What were the primary factors contributing to the increase in cost of sales for General Electric Company in fiscal year 2019 compared to fiscal year 2018?",
+        "image_id": "tatdqa-200",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-200.png",
+        "prediction": "The primary factors contributing to the increase in cost of sales for General Electric Company in fiscal year 2019 compared to fiscal year 2018 were the increase in net sales and increased fixed costs to support program ramps."
+    },
+    {
+        "question": "What was the free cash flow for Spirent Communications plc in 2019 compared to 2018, and how did the cash flow from operations contribute to this change?",
+        "image_id": "tatdqa-196",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-196.png",
+        "prediction": "The free cash flow for Spirent Communications plc increased from $0.4 million in 2018 to $100.1 million in 2019. This significant increase can be attributed to a substantial improvement in cash flow from operations, which rose from $65.9 million in 2018 to $124.9 million in 2019."
+    },
+    {
+        "question": "What was the value of current trade payables for Spirent Communications plc in 2019, and how does it compare to the 2018 figure?",
+        "image_id": "tatdqa-62",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-62.png",
+        "prediction": "The current trade payables for Spirent Communications plc were $24.6 million in 2019, a decrease from $12.9 million in 2018."
+    },
+    {
+        "question": "What was the net income or loss reported for the year ended December 31, 2019, and how does it compare to the previous years 2018 and 2017?",
+        "image_id": "tatdqa-188",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-188.png",
+        "prediction": "The net income or loss reported for the year ended December 31, 2019, was $(52,982). Compared to 2018, there was a significant decline of $(19,342), and compared to 2017, there was a decline of $(23,840)."
+    },
+    {
+        "question": "What was the change in the valuation allowance for deferred tax assets from December 31, 2018, to December 31, 2019?",
+        "image_id": "tatdqa-134",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-134.png",
+        "prediction": "The valuation allowance decreased from $78,681,000 on December 31, 2018, to $85,743,000 on December 31, 2019."
+    },
+    {
+        "question": "What were the primary factors contributing to the increase in interest expense from $2,025 million in 2018 to $2,082 million in 2019 according to the financial report?",
+        "image_id": "tatdqa-17",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-17.png",
+        "prediction": "The primary factors contributing to the increase in interest expense were the higher average borrowings, primarily from the issuance of $10.0 billion of senior notes in November 2017, and partially offset by a reduction in interest expense primarily from the maturities and repayments of $2.0 billion of senior notes during fiscal 2019."
+    },
+    {
+        "question": "What were the total net foreign currency losses recorded by American Tower Corporation for the year ended December 31, 2018?",
+        "image_id": "tatdqa-33",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-33.png",
+        "prediction": "$390.3 million"
+    },
+    {
+        "question": "What was the total amount of acquisition-related costs for the years ended June 30, 2019, 2018, and 2017?",
+        "image_id": "tatdqa-121",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-121.png",
+        "prediction": "$5,625, $4,805, and $15,938, respectively."
+    },
+    {
+        "question": "How did the value of inventories for Carpenter Technology Corporation change from June 30, 2018, to June 30, 2019, and what were the major components contributing to this change?",
+        "image_id": "tatdqa-105",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-105.png",
+        "prediction": "According to the financial statement, the total value of inventories increased by $210.3 million from $689.2 million in 2018 to $787.7 million in 2019. The major components contributing to this increase were the raw materials and supplies, and finished and purchased products, which both saw significant increases."
+    },
+    {
+        "question": "What were the total past due but not impaired receivables for Altium Limited in 2019, and how does this compare to the 2018 figure?",
+        "image_id": "tatdqa-93",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-93.png",
+        "prediction": "The total past due but not impaired receivables for Altium Limited in 2019 was US$6,890,000, which is a decrease from US$9,319,000 in 2018."
+    },
+    {
+        "question": "What was the total carrying amount of goodwill for the Pinnacle Foods segment as of May 26, 2019?",
+        "image_id": "tatdqa-138",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-138.png",
+        "prediction": "$4,487.4 million"
+    },
+    {
+        "question": "What was the Adjusted EBITDA margin for American Tower Corporation in 2019, and how does it compare to the margin in 2015?",
+        "image_id": "tatdqa-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-6.png",
+        "prediction": "The Adjusted EBITDA margin for American Tower Corporation in 2019 was 63%, which is an increase from 64% in 2015."
+    },
+    {
+        "question": "What was the loss before income taxes for the United Kingdom for the year ended March 31, 2019, and how does it compare to the previous two years?",
+        "image_id": "tatdqa-32",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-32.png",
+        "prediction": "According to the document, the loss before income taxes for the United Kingdom for the year ended March 31, 2019, was $5,000. This represents an increase compared to the previous two years: $4,626 in 2018 and $(374) in 2017."
+    },
+    {
+        "question": "What was the total carrying amount of property, plant, and equipment at the end of the year 2019 for National Storage REIT, and how did it compare to 2018?",
+        "image_id": "tatdqa-90",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-90.png",
+        "prediction": "The total carrying amount of property, plant, and equipment at the end of the year 2019 was $1,024,000, which is a decrease of $1,224,000 from the total carrying amount at the end of 2018."
+    },
+    {
+        "question": "What is the net loss reported by the company for the year ended December 31, 2019, and how does it compare to the net loss in 2018 and 2017?",
+        "image_id": "tatdqa-86",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-86.png",
+        "prediction": "The company reported a net loss of $53,407,000 in 2019, compared to a net loss of $26,201,000 in 2018 and a net loss of $4,204,000 in 2017."
+    },
+    {
+        "question": "What was the fair value of common stock vested for Sykes as of December 31, 2019, and how does it compare to the fair values in 2018 and 2017?",
+        "image_id": "tatdqa-100",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-100.png",
+        "prediction": "The fair value of common stock vested for Sykes as of December 31, 2019, was $320 million. This is higher than the fair values in 2018 ($315 million) and 2017 ($334 million), indicating an increase in common stock vesting over the years."
+    },
+    {
+        "question": "What were the main factors contributing to the income tax benefit for HC2 Holdings, Inc. for the year ended December 31, 2019, and what was the impact of the valuation allowance release?",
+        "image_id": "tatdqa-182",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-182.png",
+        "prediction": "The main factors contributing to the income tax benefit for HC2 Holdings, Inc. for the year ended December 31, 2019, were the US and foreign components of income (loss) before income taxes. The US component showed a net income of $58.3 million, while the foreign component showed a net loss of $1.6 million. The income tax benefit expense was $20.6 million, primarily driven by a net valuation allowance release of $37.4 million."
+    },
+    {
+        "question": "How did Sophos' adjusted operating profit change from FY18 to FY19, and what factors contributed to this change?",
+        "image_id": "tatdqa-195",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-195.png",
+        "prediction": "Sophos' adjusted operating profit increased by $50.7 million to $109.0 million in the period, resulting from strong revenue growth and benefiting from a small foreign exchange gain partially offset by increased sales and marketing expenditure."
+    },
+    {
+        "question": "How did the percentage of total revenue from the cloud and license business change from fiscal year 2018 to fiscal year 2019?",
+        "image_id": "tatdqa-73",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-73.png",
+        "prediction": "The percentage of total revenue from the cloud and license business increased from 81% in fiscal year 2018 to 83% in fiscal year 2019."
+    },
+    {
+        "question": "What was the change in net loss for Navios Maritime Holdings Inc.'s Europe II segment from 2018 to 2019?",
+        "image_id": "tatdqa-26",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-26.png",
+        "prediction": "The net loss increased by $5,702,000 from $49,870,000 in 2018 to $65,707,000 in 2019."
+    },
+    {
+        "question": "How did the weighted-average shares used to compute net income per share - diluted change from 2017 to 2019?",
+        "image_id": "tatdqa-186",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-186.png",
+        "prediction": "The weighted-average shares used to compute net income per share - diluted increased from 41,690 in 2017 to 42,554 in 2019."
+    },
+    {
+        "question": "What is the total amount reported for LoJack system components and law enforcement tracking units as of February 28, 2019?",
+        "image_id": "tatdqa-58",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-58.png",
+        "prediction": "$20,326"
+    },
+    {
+        "question": "How did the profit before taxation of Auto Trader Group plc for the year ended 31 March 2019 compare to the previous year?",
+        "image_id": "tatdqa-40",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-40.png",
+        "prediction": "The profit before taxation increased from \u00a3210.7 million in 2018 to \u00a3242.2 million in 2019."
+    },
+    {
+        "question": "What were the total financial income and costs for GasLog Ltd. and its Subsidiaries for the year ended December 31, 2019?",
+        "image_id": "tatdqa-158",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-158.png",
+        "prediction": "The total financial income was $5,318,000, while the total financial costs were $190,481,000."
+    },
+    {
+        "question": "What were the expected volatility percentages for stock options granted by Shopify Inc. for the years ended December 31, 2018, and December 31, 2019?",
+        "image_id": "tatdqa-35",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-35.png",
+        "prediction": "The expected volatility percentages were 54.2% for the year ended December 31, 2018, and 50.7% for the year ended December 31, 2019."
+    },
+    {
+        "question": "What is the net deferred tax assets for May 26, 2019, and May 27, 2018, and how does the valuation allowance impact these amounts?",
+        "image_id": "tatdqa-70",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-70.png",
+        "prediction": "The net deferred tax assets for May 26, 2019, and May 27, 2018, are $1,637.1 million and $257.7 million, respectively. The valuation allowance significantly impacts these amounts, with a liability of $44.1 million at May 26, 2019, and $11.7 million at May 27, 2018."
+    },
+    {
+        "question": "How did the gross margin percentage for service revenue change from July 28, 2018, to July 27, 2019, according to the financial report?",
+        "image_id": "tatdqa-48",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-48.png",
+        "prediction": "The gross margin percentage for service revenue increased from 61.9% in July 28, 2018, to 62.0% in July 27, 2019."
+    },
+    {
+        "question": "What was the total amount of purchase commitments to suppliers for ASMI as of December 31, 2019, and how much of this amount was expected to be paid within one year?",
+        "image_id": "tatdqa-125",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-125.png",
+        "prediction": "The total amount of purchase commitments to suppliers was \u20ac100,694 million as of December 31, 2019. \u20ac99,546 million of this amount was expected to be paid within one year."
+    },
+    {
+        "question": "What was the highest intraday sales price for the company's common stock during the second quarter of fiscal 2019 on the NASDAQ?",
+        "image_id": "tatdqa-92",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-92.png",
+        "prediction": "$88.08"
+    },
+    {
+        "question": "What was the percentage increase in total sales revenue for the company from 2018 to 2019 in the Americas region?",
+        "image_id": "tatdqa-78",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-78.png",
+        "prediction": "The total sales revenue in 2018 was $79,061,000, and in 2019 it was $71,159,000. To calculate the percentage increase, we need to find the difference between the two years and divide it by the original value, then multiply by 100.\n\nPercentage increase = ((71,159 - 79,061) / 79,061) * 100 \u2248 -10.2%\n\nSo, there was a 10.2% decrease in total sales revenue for the company from 2018 to 2019 in the Americas region."
+    },
+    {
+        "question": "What was the weighted-average grant date fair value of the Restricted Stock Units (RSUs) granted by ON Semiconductor Corporation for the year ended December 31, 2019?",
+        "image_id": "tatdqa-87",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-87.png",
+        "prediction": "$16.59 million"
+    },
+    {
+        "question": "What were the main factors contributing to the $22.6 million increase in sales and marketing expenses for the year ended December 31, 2018, compared to 2017?",
+        "image_id": "tatdqa-167",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-167.png",
+        "prediction": "The main factors contributing to the $22.6 million increase in sales and marketing expenses for the year ended December 31, 2018, compared to 2017 were primarily due to a $20.0 million increase in employee-related costs, which includes stock-based compensation, associated with increased headcount from 215 employees as of December 31, 2017 to 286 employees as of December 31, 2018."
+    },
+    {
+        "question": "What was the total personnel expense for ASMI employees in the year 2019, and how does it compare to 2018?",
+        "image_id": "tatdqa-175",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-175.png",
+        "prediction": "The total personnel expense for ASMI employees in 2019 was $227,727 million, which is an increase of $24,127 million compared to $188,503 million in 2018."
+    },
+    {
+        "question": "What were the non-cash impairment charges related to the Residential Lease Portfolio and equity interests in SunStrong recorded in fiscal years 2017 and 2018?",
+        "image_id": "tatdqa-47",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-47.png",
+        "prediction": "In fiscal 2017, the non-cash impairment charges related to the Residential Lease Portfolio and equity interests in SunStrong totaled $624.3 million. In fiscal 2018, additional non-cash impairment charges of $252.0 million were recorded."
+    },
+    {
+        "question": "What was the revenue and loss for the year for The Metrocentre Partnership and Metrocentre LLP at 100 percent for 2019, and how do these figures compare to 2018?",
+        "image_id": "tatdqa-18",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-18.png",
+        "prediction": "The revenue for the year was \u00a3177.2 million, and the loss for the year was \u00a3103.7 million. Compared to 2018, the revenue decreased by \u00a312.7 million, while the loss increased by \u00a310.8 million."
+    },
+    {
+        "question": "What was the total amount of deferred income reported by Spirent Communications plc for the year 2019, and how does it compare to the previous two years?",
+        "image_id": "tatdqa-149",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-149.png",
+        "prediction": "Spirent Communications plc reported $23 million in deferred income for the year 2019. This represents a significant decrease from $66.8 million in 2018 and $69.1 million in 2017, indicating a substantial drop in deferred income over the three-year period."
+    },
+    {
+        "question": "What were the total related party revenues for Black Knight, Inc. for the year ended December 31, 2019, and how do they compare to the previous two years?",
+        "image_id": "tatdqa-129",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-129.png",
+        "prediction": "The total related party revenues for Black Knight, Inc. for the year ended December 31, 2019, were $59.5 million. This represents an increase of $4.1 million from 2018 ($55.4 million) and a decrease of $6.6 million from 2017 ($66.1 million)."
+    },
+    {
+        "question": "What was the total compensation for the Group's executive management in the fiscal year ended June 30, 2019, including short-term compensation and benefits, post-employment benefits, and share-based payments?",
+        "image_id": "tatdqa-49",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-49.png",
+        "prediction": "$21,088"
+    },
+    {
+        "question": "What was the number of share options granted under the Single Incentive Plan Award (SIPA) for Auto Trader Group plc on 17 August 2018, and what was the determined fair value per option?",
+        "image_id": "tatdqa-76",
+        "image_path": "/model/haohui/FMLLM/RAG-data/TAT-DQA-images/tatdqa-76.png",
+        "prediction": "The number of share options granted under SIPA was 974,106, with a determined fair value of \u00a34.48 per option."
+    }
+]

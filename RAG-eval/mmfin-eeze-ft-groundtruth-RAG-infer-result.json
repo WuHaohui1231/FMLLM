@@ -1,0 +1,919 @@
+[
+    {
+        "question": "What percentage of the total revenue for the period 2024 9M does the \"Buoy\" segment represent?",
+        "image_id": "statistic-18",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-18.png",
+        "GT_answer": "The \"Buoy\" segment represents 24.03% of the total revenue for the period 2024 9M.",
+        "prediction": "24.03%"
+    },
+    {
+        "question": "What was the closing price of META stock on August 22, 2024, and how did it compare to the 10-day moving average at that time?",
+        "image_id": "candlestick-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-8.png",
+        "GT_answer": "The closing price of META stock on August 22, 2024, was 531.93. The 10-day moving average at that time was 527.69, so the closing price was above the 10-day moving average.",
+        "prediction": "The closing price of META stock on August 22, 2024, was $27.69. The 10-day moving average at that time was $27.00. The closing price was slightly above the 10-day moving average, indicating a positive trend."
+    },
+    {
+        "question": "What was the closing price for WMT on August 22, 2024, and how does it compare to the 52-week high?",
+        "image_id": "statistic-27",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-27.png",
+        "GT_answer": "The closing price for WMT on August 22, 2024, was $75.60. This is $0.62 below the 52-week high of $76.22.",
+        "prediction": "The closing price for WMT on August 22, 2024, was $75.60. The 52-week high was $49.85. The closing price is significantly higher than the 52-week high, indicating a strong performance."
+    },
+    {
+        "question": "What was the closing price of Intel (INTC) on the date corresponding to the candlestick chart showing significant price movement between April and August 2024?",
+        "image_id": "mixed-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-3.png",
+        "GT_answer": "The closing price of Intel (INTC) on the date corresponding to the candlestick chart showing significant price movement between April and August 2024 was 30.290.",
+        "prediction": "The closing price of Intel (INTC) on the date corresponding to the candlestick chart was $52.307."
+    },
+    {
+        "question": "What are the key trends or patterns observed in the KDJ indicator from November 2023 to June 2024?",
+        "image_id": "indicator-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-2.png",
+        "GT_answer": "The KDJ indicator from November 2023 to June 2024 shows several notable patterns:\n\n1. **Volatility**: The indicator exhibits frequent fluctuations with multiple peaks and troughs, indicating volatile market conditions.\n\n2. **Crossover Points**: There are several instances where the K (yellow) line crosses the D (blue) line, signaling potential buy or sell signals.\n\n3. **Divergence**: The J (magenta) line frequently diverges from the K and D lines, which can indicate potential trend changes.\n\n4. **Overall Range**: The indicator generally oscillates between extreme highs and lows, suggesting strong momentum shifts throughout the period.\n\nThese patterns suggest active trading opportunities with frequent trend reversals.",
+        "prediction": "The KDJ indicator shows a general upward trend with some fluctuations, indicating a bullish trend in the market."
+    },
+    {
+        "question": "What indicates a potential shift in investor sentiment for PayPal Holdings (PYPL) according to the technical analysis provided?",
+        "image_id": "document-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-4.png",
+        "GT_answer": "Improving momentum and rising On-Balance Volume (OBV) indicate a potential shift in investor sentiment for PayPal Holdings (PYPL).",
+        "prediction": "The consolidation phase within a downtrend suggests that PYPL may be stabilizing, and the improving momentum and rising OBV indicate a potential shift in investor sentiment."
+    },
+    {
+        "question": "Which company from the \"Most Popular Stocks\" list experienced the highest percentage increase in stock price, and what was the percentage change?",
+        "image_id": "table-16",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-16.png",
+        "GT_answer": "The company SNTI experienced the highest percentage increase in stock price, with a change of 51.27%.",
+        "prediction": "SNTI had the highest percentage increase in stock price with a change of 51.27%."
+    },
+    {
+        "question": "What is the 52-week price range for Microchip Technology Inc. (MCHP) as of June 24?",
+        "image_id": "document-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-1.png",
+        "GT_answer": "The 52-week price range for Microchip Technology Inc. (MCHP) as of June 24 is $68.75 to $100.56.",
+        "prediction": "The 52-week price range for Microchip Technology Inc. (MCHP) as of June 24 is $68.75 - $100.56."
+    },
+    {
+        "question": "What are the expected earnings per share growth and overall revenue growth percentages for Starbucks Corporation in 2024?",
+        "image_id": "document-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-10.png",
+        "GT_answer": "The expected earnings per share growth for Starbucks Corporation in 2024 is 15-20%, and the overall revenue growth is expected to be 7-10%.",
+        "prediction": "The expected earnings per share growth is 15-20%, and the overall revenue growth is 7-10%."
+    },
+    {
+        "question": "What is the listing date of Meta Platforms, Inc. on NASDAQ?",
+        "image_id": "table-35",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-35.png",
+        "GT_answer": "Meta Platforms, Inc. was listed on NASDAQ on 05/18/2012.",
+        "prediction": "05/18/2012"
+    },
+    {
+        "question": "What was the Relative Strength Index (RSI) value on the date 2024-05-01, and how does it compare to the RSI thresholds of 35.20, 55.97, 71.43, and 89.54?",
+        "image_id": "indicator-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-8.png",
+        "GT_answer": "On 2024-05-01, the Relative Strength Index (RSI) values were as follows: RSI6: 37.62, RSI12: 38.50, and RSI24: 43.08.\n\nComparison:\n\n- RSI6 (37.62) is above the threshold of 35.20 but below 55.97.\n- RSI12 (38.50) is above the threshold of 35.20 but below 55.97.\n- RSI24 (43.08) is above the threshold of 35.20 but below 55.97.\n\nAll RSI values are below the thresholds of 71.43 and 89.54.",
+        "prediction": "The Relative Strength Index (RSI) value on the date 2024-05-01 was 35.20, which is below the thresholds of 55.97 and 71.43."
+    },
+    {
+        "question": "Which company listed in the table experienced the largest percentage decrease in stock price, and what was the percentage change?",
+        "image_id": "table-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-6.png",
+        "GT_answer": "Greenlane Holdings (GNLN) experienced the largest percentage decrease in stock price with a change of -10.29%.",
+        "prediction": "Greenlane Holdings experienced the largest percentage decrease in stock price, with a percentage change of -10.29%."
+    },
+    {
+        "question": "Which company among Walgreens Boots, Broadcom, Altria Group, Verizon, and Franklin has the highest dividend yield as of August 21, 2024?",
+        "image_id": "table-31",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-31.png",
+        "GT_answer": "Walgreens Boots has the highest dividend yield at 14.05%.",
+        "prediction": "Walgreens Boots has the highest dividend yield of 14.05%."
+    },
+    {
+        "question": "What was the average price paid per share for 3M's stock repurchases during the period January 1 to December 31, 2018?",
+        "image_id": "document-11",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-11.png",
+        "GT_answer": "The average price paid per share for 3M's stock repurchases during the period January 1 to December 31, 2018, was $207.46.",
+        "prediction": "The average price paid per share for 3M's stock repurchases during the period January 1 to December 31, 2018, was $207.46."
+    },
+    {
+        "question": "What is the consensus target price and consensus rating for Intel [INTC.O], and how have these metrics changed over the specified period in 2024?",
+        "image_id": "mixed-15",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-15.png",
+        "GT_answer": "The consensus target price for Intel [INTC.O] is 36.84, and the consensus rating is \"Buy\" at 1.33. Over the specified period in 2024, the target price and consensus rating have remained relatively stable, with minor fluctuations. The rating increased slightly in 2024-02 to a high of 1.67 in 2024-04, before stabilizing at 1.33 by the latest period. The target price shows a slight upward trend from 36.84 in the latest period to about 55 in 2024-06.",
+        "prediction": "The consensus target price for Intel [INTC.O] is $36.84, with a consensus rating of 'Buy' (1.33). The consensus rating has remained constant at 'Buy' (1.33) throughout the specified period in 2024."
+    },
+    {
+        "question": "What is the latest consensus target price for Amazon.com (AMZN.O) and how does it compare to the target price in April 2024?",
+        "image_id": "mixed-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-5.png",
+        "GT_answer": "The latest consensus target price for Amazon.com is 203.39. In April 2024, the target price was slightly higher at approximately 208.",
+        "prediction": "The latest consensus target price for Amazon.com (AMZN.O) is $203.39, and it remains consistent at $203.39 in April 2024."
+    },
+    {
+        "question": "What are the key trends observed in the MACD (12, 26, 9) indicator from November 2023 to June 2024, particularly regarding the MACD line, signal line, and histogram changes?",
+        "image_id": "indicator-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-3.png",
+        "GT_answer": "From November 2023 to June 2024, the MACD indicator shows the following key trends:\n\n1. **November 2023 - January 2024**: The MACD line is above the signal line, indicating a bullish trend, with a gradually increasing histogram.\n\n2. **February 2024**: The MACD line peaks and starts to converge towards the signal line, resulting in decreasing positive histogram bars.\n\n3. **March 2024**: The MACD line crosses below the signal line, and the histogram turns negative, indicating a bearish trend.\n\n4. **April 2024**: The MACD line continues below the signal line, with a deepening negative histogram.\n\n5. **May - June 2024**: The MACD line rises back towards the signal line, crossing above it in June, which results in the histogram moving from negative to positive, suggesting a reversal to a bullish trend.",
+        "prediction": "The MACD (12, 26, 9) indicator shows a consistent decline in the MACD line from November 2023 to June 2024, indicating a bearish trend. The signal line remains relatively stable, with minor fluctuations. The histogram changes from green to red, indicating a shift from bullish to bearish sentiment."
+    },
+    {
+        "question": "What was the total change in remuneration for Jeffrey E. Williams compared to the previous period, and how did his total shareholding change during the same timeframe?",
+        "image_id": "table-24",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-24.png",
+        "GT_answer": "Jeffrey E. Williams had a change in remuneration of -189.13 compared to the previous period. His total shareholding changed by -187.58.",
+        "prediction": "Jeffrey E. Williams' total remuneration increased by $189.13 million, while his total shareholding decreased by 489.82."
+    },
+    {
+        "question": "Which company has the highest dividend yield as of August 28, 2024, according to the table, and what is its net profit margin as of June 30, 2024?",
+        "image_id": "table-22",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-22.png",
+        "GT_answer": "The company with the highest dividend yield as of August 28, 2024, is WBA with a dividend yield of 15.57%. Its net profit margin as of June 30, 2024, is -17.08%.",
+        "prediction": "The company with the highest dividend yield as of August 28, 2024, is Walgreens, with a yield of 15.57%. According to the table, Walgreens' net profit margin as of June 30, 2024, is -17.08%."
+    },
+    {
+        "question": "What is the closing price of Microsoft on June 25, 2024, and how does it compare to the opening price on the same day?",
+        "image_id": "candlestick-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-2.png",
+        "GT_answer": "The closing price of Microsoft on June 25, 2024, is 450.950. Compared to the opening price of 448.250, the closing price is higher by 2.700.",
+        "prediction": "The closing price of Microsoft on June 25, 2024, is $452.60, while the opening price is $449.75. The closing price is higher than the opening price by $2.85."
+    },
+    {
+        "question": "What was the approximate stock price of Meta Platforms, Inc. in early 2017 compared to April 2023, as shown in the historical price chart?",
+        "image_id": "statistic-31",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-31.png",
+        "GT_answer": "In early 2017, the stock price of Meta Platforms, Inc. was approximately $100. By April 2023, it had risen to approximately $531.93.",
+        "prediction": "In early 2017, the stock price of Meta Platforms, Inc. was approximately $100, while in April 2023, it was around $600."
+    },
+    {
+        "question": "What is the price-to-book ratio (PB) for the company XTIA based on the pre-market stock data?",
+        "image_id": "table-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-1.png",
+        "GT_answer": "The price-to-book ratio (PB) for the company XTIA is 4.54.",
+        "prediction": "The PB for XTIA is 4.54."
+    },
+    {
+        "question": "What is the average earnings estimate for Microsoft Corporation (MSFT) for the current quarter of September 2024, and how does it compare to the same quarter from the previous year?",
+        "image_id": "mixed-20",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-20.png",
+        "GT_answer": "The average earnings estimate for Microsoft Corporation (MSFT) for the current quarter of September 2024 is 3.1. This is an increase compared to the same quarter from the previous year, which had an earnings per share (EPS) of 2.73.",
+        "prediction": "The average earnings estimate for Microsoft Corporation (MSFT) for the current quarter of September 2024 is $3.19. This represents a decrease of $0.59 compared to the same quarter from the previous year, which was $3.78."
+    },
+    {
+        "question": "What is the MACD(DIFF Value) for Eli Lilly on July 1, 2024?",
+        "image_id": "table-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-7.png",
+        "GT_answer": "The MACD(DIFF Value) for Eli Lilly on July 1, 2024, is 27.55.",
+        "prediction": "The MACD(DIFF Value) for Eli Lilly on July 1, 2024 is 27.55."
+    },
+    {
+        "question": "What trend can be observed in SIGA Technologies' total revenue from March 2022 to March 2024, and how does this relate to their net margin during the same period?",
+        "image_id": "document-20",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-20.png",
+        "GT_answer": "From March 2022 to March 2024, SIGA Technologies' total revenue shows a declining trend. It decreases from $214.775M in March 2022 to $157.024M in March 2024. Despite this decline in revenue, the net margin shows an improvement. It increases from 30.72% in March 2022 to 50.48% in March 2024, indicating better profitability efficiency in managing costs and expenses relative to revenue over the period.",
+        "prediction": "The image shows that SIGA Technologies' total revenue has been steadily increasing from March 2022 to March 2024, with a growth rate of 50.48% over this period. The net margin has also shown an increasing trend, with a peak of 50.48% in March 2024."
+    },
+    {
+        "question": "What is the Price-to-Earnings Growth (PEG) ratio for Palo Alto Networks as of July 1, 2024?",
+        "image_id": "table-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-10.png",
+        "GT_answer": "The Price-to-Earnings Growth (PEG) ratio for Palo Alto Networks as of July 1, 2024, is 0.95.",
+        "prediction": "The PEG ratio for Palo Alto Networks as of July 1, 2024, is 0.95."
+    },
+    {
+        "question": "Which company had the highest Gross Profit Margin as of June 30, 2024, according to the financial data shown for Microsoft, Apple, Oracle, and other companies?",
+        "image_id": "table-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-9.png",
+        "GT_answer": "Oracle had the highest Gross Profit Margin at 71.06% as of June 30, 2024.",
+        "prediction": "Microsoft had the highest Gross Profit Margin of 69.69% as of June 30, 2024."
+    },
+    {
+        "question": "What are the four reportable operating segments mentioned for American Express, and how do they contribute to its integrated payments platform?",
+        "image_id": "document-19",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-19.png",
+        "GT_answer": "The four reportable operating segments for American Express are:\n\n1. **U.S. Consumer Services (USCS)**\n2. **Commercial Services (CS)**\n3. **International Card Services (ICS)**\n4. **Global Merchant and Network Services (GMNS)**\n\nThese segments contribute to its integrated payments platform by forming an end-to-end network that connects card members and merchants. This \"closed loop\" approach allows American Express to handle and access information from both ends of transactions, differentiating it from other payment networks.",
+        "prediction": "The four reportable operating segments mentioned are U.S. Consumer Services (USCS), Commercial Services (CS), International Card Services (ICS), and Global Merchant and Network Services (GMNS). These segments contribute to American Express's integrated payments platform by providing a comprehensive service offering that encompasses various aspects of the payment process, from consumer services to merchant and network services."
+    },
+    {
+        "question": "How did the MACD (Moving Average Convergence Divergence) values change from December 2023 to June 2024, and what does this indicate about the market trend during this period?",
+        "image_id": "indicator-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-7.png",
+        "GT_answer": "From December 2023 to June 2024, the MACD values initially decreased, turned negative around February 2024, and then increased, turning positive by June 2024. This indicates a bearish trend from December to February, followed by a bullish reversal toward June.",
+        "prediction": "The MACD values showed an initial increase in December 2023, followed by a decrease in January 2024. By March 2024, the MACD values recovered and continued to rise until June 2024. This indicates a potential bullish trend during this period, as the MACD values generally indicate the relationship between two moving averages of a security's price."
+    },
+    {
+        "question": "Which company showed the highest percentage increase in stock price on July 1, 2024, and what was the percentage change?",
+        "image_id": "table-18",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-18.png",
+        "GT_answer": "TeraWulf (WULF) showed the highest percentage increase in stock price on July 1, 2024, with a 17.08% change.",
+        "prediction": "PZZA (PAPA John'S International) showed the highest percentage increase in stock price on July 1, 2024, with a percentage change of 2.15%."
+    },
+    {
+        "question": "What was the closing stock price of Microsoft (MSFT) on August 22, 2024, and what was the percentage change compared to the previous day?",
+        "image_id": "mixed-19",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-19.png",
+        "GT_answer": "The closing stock price of Microsoft (MSFT) on August 22, 2024, was 415.550. The percentage change compared to the previous day was a decrease of 2.03%.",
+        "prediction": "The closing stock price of Microsoft (MSFT) on August 22, 2024, was $415.550. The percentage change compared to the previous day was -2.03%."
+    },
+    {
+        "question": "What is the gross profit for PDD Inc. in the fiscal year 2023, and how does it compare to the gross profit in 2022?",
+        "image_id": "table-32",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-32.png",
+        "GT_answer": "The gross profit for PDD Inc. in the fiscal year 2023 is 155.92 billion CNY. In fiscal year 2022, the gross profit was 99.10 billion CNY. This indicates an increase of 56.82 billion CNY in gross profit from 2022 to 2023.",
+        "prediction": "The gross profit for PDD Inc. in the fiscal year 2023 is 247.64 million dollars, which is a decrease of 3.53% compared to the gross profit in 2022 (130.56 million dollars)."
+    },
+    {
+        "question": "What is the closing price of HCA Healthcare on July 1, 2024, and how does it compare to its high and low prices for the same day?",
+        "image_id": "table-11",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-11.png",
+        "GT_answer": "The closing price of HCA Healthcare on July 1, 2024, is $315.12. It is lower than the high price of $324.93 and higher than the low price of $313.38 for the same day.",
+        "prediction": "The closing price of HCA Healthcare on July 1, 2024, is $321.13 USD. The high price for the same day is $324.93 USD, and the low price is $313.38 USD."
+    },
+    {
+        "question": "What was the opening price and the highest price of The Coca-Cola Company's stock on November 2, 2024, according to the candlestick chart?",
+        "image_id": "mixed-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-2.png",
+        "GT_answer": "The opening price of The Coca-Cola Company's stock on November 2, 2024, was 72.050, and the highest price was 72.220.",
+        "prediction": "According to the chart, the opening price of The Coca-Cola Company's stock on November 2, 2024 was $72.050, and the highest price was $72.220."
+    },
+    {
+        "question": "What was the closing price of WMT stock on August 15, 2024, according to the daily candlestick chart?",
+        "image_id": "candlestick-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-6.png",
+        "GT_answer": "The closing price of WMT stock on August 15, 2024, was 73.18.",
+        "prediction": "The closing price of WMT stock on August 15, 2024, was around $73.58."
+    },
+    {
+        "question": "What is the forecasted change in Apple's EPS for 2024 compared to the consensus EPS for 2023?",
+        "image_id": "mixed-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-6.png",
+        "GT_answer": "The forecasted EPS for Apple in 2024 is 6.70, compared to the consensus EPS of 6.24 for 2023. The change in EPS is an increase of 0.46.",
+        "prediction": "The forecasted change in Apple's EPS for 2024 compared to the consensus EPS for 2023 is a 1.10% increase."
+    },
+    {
+        "question": "Which sector experienced the highest monthly percentage increase, and what was that percentage?",
+        "image_id": "table-17",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-17.png",
+        "GT_answer": "The Information Technology sector experienced the highest monthly percentage increase, at 8.02%.",
+        "prediction": "The Information Technology sector experienced the highest monthly percentage increase at 8.02%."
+    },
+    {
+        "question": "What was Apple's dividend payout ratio in 2021, and how does it compare to 2024?",
+        "image_id": "mixed-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-8.png",
+        "GT_answer": "In 2021, Apple's dividend payout ratio was approximately 18%. In 2024, it decreased to about 10%.",
+        "prediction": "According to the graph, Apple's dividend payout ratio was approximately 32% in 2021. In contrast, the ratio is expected to be around 16% in 2024."
+    },
+    {
+        "question": "How did the average individual revenue created by Alibaba change between March 31, 2020, and June 30, 2024?",
+        "image_id": "statistic-29",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-29.png",
+        "GT_answer": "Between March 31, 2020, and June 30, 2024, the average individual revenue created by Alibaba increased from approximately 3,350K to about 4,500K.",
+        "prediction": "The average individual revenue created by Alibaba increased from $3,400 in 2020 to $4,800 in 2024, indicating a significant growth of $1,400 or approximately 41%."
+    },
+    {
+        "question": "What was the closing stock price of Apple Inc. on June 25, 2024, and how did it change compared to the previous day?",
+        "image_id": "candlestick-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-1.png",
+        "GT_answer": "The closing stock price of Apple Inc. on June 25, 2024, was 209.070. It increased by 0.930 compared to the previous day.",
+        "prediction": "The closing stock price of Apple Inc. on June 25, 2024, was $223.318. It decreased by $0.918 compared to the previous day's closing price of $224.236."
+    },
+    {
+        "question": "What has been the trend of Apple's P/E Ratio (TTM) over the 10-year period from August 2014 to August 2024, and how does it compare to the median value of 21.90 during this period?",
+        "image_id": "statistic-24",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-24.png",
+        "GT_answer": "Over the 10-year period from August 2014 to August 2024, Apple's P/E Ratio (TTM) showed an upward trend, peaking around 2021, then slightly decreasing before rising again towards 2024. For most of this period, the P/E Ratio stayed above the median value of 21.90, indicating higher valuation levels compared to the median.",
+        "prediction": "The P/E Ratio (TTM) of Apple has shown significant fluctuations over the 10-year period, with a general upward trend. The median P/E Ratio (TTM) is 21.90, and the data suggests that Apple's P/E Ratio (TTM) has been consistently above this median value, indicating a premium valuation of the company's stock relative to its earnings."
+    },
+    {
+        "question": "What was the highest stock price for PDD Holdings over the period from May 10, 2023, to August 22, 2024?",
+        "image_id": "mixed-17",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-17.png",
+        "GT_answer": "The highest stock price for PDD Holdings over the period from May 10, 2023, to August 22, 2024, was 164.690.",
+        "prediction": "The highest stock price for PDD Holdings over the period was 146.030."
+    },
+    {
+        "question": "How did the cumulative total return of Amcor plc compare to the S&P 500 Materials Index on June 30, 2023?",
+        "image_id": "document-15",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-15.png",
+        "GT_answer": "On June 30, 2023, the cumulative total return of Amcor plc was $105.72, while the S&P 500 Materials Index was $172.39. Amcor plc's return was significantly lower than that of the S&P 500 Materials Index.",
+        "prediction": "The cumulative total return of Amcor plc on June 30, 2023, was $105.72, while the S&P 500 Materials Index had a return of $173.21."
+    },
+    {
+        "question": "What is the highest stock price for JPMorgan Chase (JPM) observed between November 2, 2023, and August 29, 2024, as depicted in the candlestick chart?",
+        "image_id": "mixed-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-4.png",
+        "GT_answer": "The highest stock price for JPMorgan Chase (JPM) observed between November 2, 2023, and August 29, 2024, is 222.98.",
+        "prediction": "$222.210"
+    },
+    {
+        "question": "What was the net income attributable to Amcor plc for fiscal year 2023, and how does it compare in percentage to the previous year?",
+        "image_id": "document-16",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-16.png",
+        "GT_answer": "The net income attributable to Amcor plc for fiscal year 2023 was $1,048 million. This represents a 30.2% increase from the previous year, where the net income was $805 million.",
+        "prediction": "The net income attributable to Amcor plc for fiscal year 2023 was $1,048 million. Compared to the previous year's $805 million, it increased by 30.7%."
+    },
+    {
+        "question": "What was the closing price of NTES stock on August 22, 2024, and how does it compare to the previous day's closing price?",
+        "image_id": "candlestick-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-7.png",
+        "GT_answer": "The closing price of NTES stock on August 22, 2024, was 82.25. It decreased by 11.17% compared to the previous day.",
+        "prediction": "The closing price of NTES stock on August 22, 2024, was $120.00. The previous day's closing price was $122.00, indicating a decline of $2.00."
+    },
+    {
+        "question": "What were the key factors impacting the year-on-year change in business segment operating income for 3M's Health Care Business between 2021 and 2022?",
+        "image_id": "document-13",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-13.png",
+        "GT_answer": "The key factors impacting the year-on-year change in 3M's Health Care Business operating income between 2021 and 2022 were:\n\n1. **Increased Costs**: There were increased raw materials and logistics costs, along with manufacturing productivity headwinds.\n\n2. **Investments and Costs**: Increased investments in the business and transaction-related costs associated with the announced food safety business divestiture affected income.\n\n3. **Sales Growth**: Partially offset by sales growth driven by price actions, strong spending discipline, and restructuring actions.\n\n4. **Divestitures**: The impact of divestitures, specifically the Food Safety Division split-off and merger with Neogen, affected sales negatively.",
+        "prediction": "The key factors impacting the year-on-year change in business segment operating income for 3M's Health Care Business between 2021 and 2022 include divestitures and translation."
+    },
+    {
+        "question": "What is the change in Apple's stock price and its percentage gain or loss for the week ending August 28, 2024, based on the candlestick chart and the listed data?",
+        "image_id": "mixed-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-9.png",
+        "GT_answer": "The change in Apple's stock price for the week ending August 28, 2024, is a decrease of 1.540 points. The percentage loss is -0.68%.",
+        "prediction": "According to the data, Apple's stock price increased by $1.540 to $225.68, resulting in a percentage gain of 0.68%."
+    },
+    {
+        "question": "What was the percentage change in operating income margin for 3M from 2021 to 2022?",
+        "image_id": "document-12",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-12.png",
+        "GT_answer": "The operating income margin for 3M decreased by 1.7 percentage points from 2021 (20.8%) to 2022 (19.1%).",
+        "prediction": "The operating income margin increased from 20.8% in 2021 to 19.1% in 2022, which is a decrease of 1.7%."
+    },
+    {
+        "question": "What is the price trend for JD stock from late June to mid-August, as depicted in the candlestick chart?",
+        "image_id": "candlestick-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-9.png",
+        "GT_answer": "The price trend for JD stock from late June to mid-August shows an overall downward movement initially, followed by a period of stabilization in July and a slight recovery in late July and early August. Mid-August sees a brief spike upwards, followed by a small decline.",
+        "prediction": "The price trend for JD stock from late June to mid-August is generally increasing, with some fluctuations."
+    },
+    {
+        "question": "What is the consensus target price for Alibaba's stock and how does it compare to the latest price as of July 2024?",
+        "image_id": "mixed-14",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-14.png",
+        "GT_answer": "The consensus target price for Alibaba's stock is \\$121.46. The latest price as of July 2024 is \\$81.02. The target price is significantly higher than the latest price.",
+        "prediction": "The consensus target price for Alibaba's stock is $121.46, and the latest price as of July 2024 is $81.02."
+    },
+    {
+        "question": "What is the expected percentage change in total operating income for the company PDD from 2023A to 2024E?",
+        "image_id": "mixed-18",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-18.png",
+        "GT_answer": "The expected percentage change in total operating income for PDD from 2023A to 2024E is 65.61%.",
+        "prediction": "The expected percentage change in total operating income for the company PDD from 2023A to 2024E is 65.61%."
+    },
+    {
+        "question": "What is the trend in net profit for Good Future [TAL.N] from 2019 to 2024, and how does it compare to the gross profit over the same period?",
+        "image_id": "table-33",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-33.png",
+        "GT_answer": "The net profit for Good Future [TAL.N] from 2019 to 2024 shows a declining trend, moving from 0.00 in 2019 to -0.14 in 2022, with a slight improvement to -0.13 in 2023 but returning to 0.00 in 2024. In comparison, gross profit remained relatively stable, starting at 1.00 in 2019, decreasing to 0.58 in 2023, and improving to 0.81 in 2024. The gross profit shows more stability and improvement towards the end of the period, compared to the fluctuating and negative trend in net profit.",
+        "prediction": "The trend in net profit for Good Future [TAL.N] from 2019 to 2024 shows a fluctuation with negative values in 2020 and 2021, followed by a positive net profit in 2022 and 2023. The net profit is expected to continue growing in 2024. The gross profit has also shown fluctuations, but it has generally increased over the same period."
+    },
+    {
+        "question": "What was the highest stock price for iQiyi (IQ) during the period from February 3rd to August 29th, 2024?",
+        "image_id": "mixed-13",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-13.png",
+        "GT_answer": "The highest stock price for iQiyi (IQ) during the period from February 3rd to August 29th, 2024, was 5.800.",
+        "prediction": "$5.800"
+    },
+    {
+        "question": "What were the total impairment losses recognized in restructuring, impairment, and other related activities for the years ended June 30, 2023, 2022, and 2021?",
+        "image_id": "document-17",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-17.png",
+        "GT_answer": "The total impairment losses recognized in restructuring, impairment, and other related activities for the years ended June 30 were as follows:\n\n- 2023: $18 million\n- 2022: $42 million\n- 2021: $9 million",
+        "prediction": "$18 million in 2023, $42 million in 2022, and $9 million in 2021"
+    },
+    {
+        "question": "What was the closing price of Micron Technology (MU) on March 21, 2024, and how did it change compared to the opening price?",
+        "image_id": "mixed-21",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-21.png",
+        "GT_answer": "The closing price of Micron Technology (MU) on March 21, 2024, was 109.850. It decreased by 1.260 compared to the opening price of 111.140.",
+        "prediction": "The closing price of Micron Technology (MU) on March 21, 2024, was $113.50. The closing price was $2.00 higher than the opening price of $111.50."
+    },
+    {
+        "question": "Based on the Bollinger Bands chart for the asset between the dates 23.11 and 24.06, what were the upper, middle, and lower Bollinger Band values on the date marked as 24.01?",
+        "image_id": "indicator-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-5.png",
+        "GT_answer": "On the date marked as 24.01, the Bollinger Band values were as follows:\n\n- Upper Band: 431.004\n- Middle Band: 422.673\n- Lower Band: 414.341",
+        "prediction": "The upper Bollinger Band value on 24.01 was approximately 422.673, the middle Bollinger Band value was around 431.004, and the lower Bollinger Band value was about 414.341."
+    },
+    {
+        "question": "What has been the 52-week price range for The Williams Companies, Inc. (WMB), and how does this compare to the current stock price?",
+        "image_id": "document-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-2.png",
+        "GT_answer": "The 52-week price range for The Williams Companies, Inc. (WMB) is $30.10 to $41.89. The current stock price is $41.46, which is near the upper end of this range.",
+        "prediction": "The 52-week price range for The Williams Companies, Inc. (WMB) has been between $30.10 and $41.67. As of the current date, the stock price is $41.46, which is within the higher end of this range."
+    },
+    {
+        "question": "What is the P/E ratio (TTM) for NVDA as of June 2024?",
+        "image_id": "statistic-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-4.png",
+        "GT_answer": "The P/E ratio (TTM) for NVDA as of June 2024 is 71.78.",
+        "prediction": "The P/E ratio (TTM) for NVDA as of June 2024 is 71.78."
+    },
+    {
+        "question": "What was the lowest stock price for Intel (INTC) between November 2023 and August 2024, and how does it compare to the opening price?",
+        "image_id": "mixed-12",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-12.png",
+        "GT_answer": "The lowest stock price for Intel (INTC) between November 2023 and August 2024 was 19.750. Compared to the opening price of 19.760, it is slightly lower by 0.010.",
+        "prediction": "The lowest stock price for Intel (INTC) between November 2023 and August 2024 was around $19.76. The opening price on the same day was $20.13, which is higher than the lowest price."
+    },
+    {
+        "question": "What was the Return on Equity (ROE) for Q4 2024, and how did it compare to the year-over-year (YoY) percentage change for the same period?",
+        "image_id": "statistic-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-5.png",
+        "GT_answer": "The Return on Equity (ROE) for Q4 2024 was 32.23%. The year-over-year (YoY) percentage change for the same period was approximately 270%.",
+        "prediction": "The ROE for Q4 2024 was 32.23%, representing a year-over-year increase of 900%."
+    },
+    {
+        "question": "What is the Price-to-Earnings (PE) forward ratio for NVDA according to the latest stock market table?",
+        "image_id": "table-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-2.png",
+        "GT_answer": "The Price-to-Earnings (PE) forward ratio for NVDA is 51.37.",
+        "prediction": "According to the image, the Price-to-Earnings (PE) forward ratio for NVDA is 62.22."
+    },
+    {
+        "question": "What was the trend in Intel Corporation (INTC) stock price from October 2023 to August 2024, and how did the MACD indicator behave during this period?",
+        "image_id": "candlestick-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-10.png",
+        "GT_answer": "From October 2023 to August 2024, Intel Corporation's (INTC) stock price initially rose, peaked in early 2024, and then declined significantly by August 2024. The MACD indicator showed a bullish trend at the start of the period, crossing above the signal line. It then fluctuated and crossed below the signal line in mid-2024, indicating a bearish trend towards the end of the period.",
+        "prediction": "The trend in Intel Corporation (INTC) stock price from October 2023 to August 2024 was a decline, as indicated by the red bars in the chart. The MACD indicator also showed a decline during this period, with a negative MACD line and a negative signal line."
+    },
+    {
+        "question": "What is the total number of shares sold by HUANG JEN HSUN on June 27, 2024, and what was the highest price per share at which these transactions occurred?",
+        "image_id": "table-20",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-20.png",
+        "GT_answer": "On June 27, 2024, HUANG JEN HSUN sold a total of 119,000 shares. The highest price per share at which these transactions occurred was $126.155.",
+        "prediction": "HUANG JEN HSUN sold a total of 600,000 shares on June 27, 2024. The highest price per share at which these transactions occurred was 126.155 USD."
+    },
+    {
+        "question": "What is the projected EPS for PDD in 2024 according to the earnings forecast, and how does it compare to the previous year?",
+        "image_id": "mixed-11",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-11.png",
+        "GT_answer": "The projected EPS for PDD in 2024 is 7.40. It represents a 20.92% increase compared to the previous year's EPS of 6.12 in 2023.",
+        "prediction": "The projected EPS for PDD in 2024 is $58.08, which represents a significant increase of 66.54% compared to the previous year's EPS of $34.89."
+    },
+    {
+        "question": "What is the market value of Apple (AAPL) as indicated, and what does the PE_TTM ratio stand at for the period from October 2023 to August 2024?",
+        "image_id": "mixed-16",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-16.png",
+        "GT_answer": "The market value of Apple (AAPL) is $3.788 trillion, and the PE_TTM ratio stands at 36.52 for the period from October 2023 to August 2024.",
+        "prediction": "The market value of Apple (AAPL) is 227,790, and the PE_TTM ratio stands at 36.52."
+    },
+    {
+        "question": "What is the observed trend in NVIDIA Corporation's stock price from November 2021 to April 2024, and how does this period affect the accumulation/distribution indicator?",
+        "image_id": "statistic-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-10.png",
+        "GT_answer": "From November 2021 to April 2024, NVIDIA Corporation's stock price shows an upward trend. The accumulation/distribution indicator also reflects this trend, indicating increased buying pressure over the period.",
+        "prediction": "The stock price of NVIDIA Corporation has shown an overall upward trend from November 2021 to April 2024."
+    },
+    {
+        "question": "What is the difference between the diluted earnings per share attributable to 3M common shareholders in 2022 and 2020?",
+        "image_id": "document-14",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-14.png",
+        "GT_answer": "The diluted earnings per share attributable to 3M common shareholders in 2022 is $10.18, and in 2020 it is $9.36. The difference is $10.18 - $9.36 = $0.82.",
+        "prediction": "$10.21 (2022) - $9.36 (2020) = $0.85"
+    },
+    {
+        "question": "What was the earnings growth percentage for Hyatt Hotels Corporation, with the ticker symbol H, as indicated in the financial report for 2023?",
+        "image_id": "document-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-8.png",
+        "GT_answer": "The earnings growth percentage for Hyatt Hotels Corporation in 2023 was 830.20%.",
+        "prediction": "830.20%"
+    },
+    {
+        "question": "What is the projected EPS (Earnings Per Share) for Apple [AAPL_O] in 2024, and how does it compare to the current consensus forecast value?",
+        "image_id": "mixed-10",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-10.png",
+        "GT_answer": "The projected EPS for Apple [AAPL_O] in 2024 is 6.70. This matches the current consensus forecast value of 6.70.",
+        "prediction": "The projected EPS for Apple [AAPL_O] in 2024 is $6.70, which is consistent with the current consensus forecast value."
+    },
+    {
+        "question": "Which industry group has shown the highest monthly percentage change, and what is the value of this change?",
+        "image_id": "table-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-3.png",
+        "GT_answer": "The industry group with the highest monthly percentage change is \"Semiconductors & Semiconductor Equipment\" with a change of 9.07%.",
+        "prediction": "The Software & Services industry group has shown the highest monthly percentage change, with a value of 5.34%."
+    },
+    {
+        "question": "For Apple Inc. (AAPL.O), how did the average individual revenue and profit created change from September 2008 to September 2023?",
+        "image_id": "statistic-26",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-26.png",
+        "GT_answer": "From September 2008 to September 2023, Apple's average individual revenue created increased from approximately 1,150K to around 2,200K. The average individual profit created also rose from about 170K to approximately 530K.",
+        "prediction": "The average individual revenue and profit created for Apple Inc. (AAPL.O) have shown a significant increase from September 2008 to September 2023."
+    },
+    {
+        "question": "What was the difference in Tesla's vehicle deliveries between Q2 2023 and the Q2 2024 estimate?",
+        "image_id": "statistic-17",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-17.png",
+        "GT_answer": "The difference in Tesla's vehicle deliveries between Q2 2023 and the Q2 2024 estimate is 28,121 vehicles, with deliveries decreasing from 466,140 in Q2 2023 to an estimated 438,019 in Q2 2024.",
+        "prediction": "To find the difference, we need to subtract the Q2 2023 delivery figure from the Q2 2024 estimate.\n\nQ2 2024 estimate: 438,019 units\nQ2 2023 delivery: 466,140 units\n\nDifference = Q2 2024 estimate - Q2 2023 delivery\n= 438,019 - 466,140\n= -28,121 units\n\nThe negative result indicates a decline in deliveries."
+    },
+    {
+        "question": "What was the payout ratio at the time when the total cash dividends were at their highest, and what was the corresponding net income attributable to the parent?",
+        "image_id": "statistic-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-3.png",
+        "GT_answer": "The payout ratio at the time when the total cash dividends were at their highest was 4.00%. The corresponding net income attributable to the parent was approximately 10B.",
+        "prediction": "According to the graph, the payout ratio was 13.94% when the total cash dividends were at their highest, which was $0.04 USD. The corresponding net income attributable to the parent was $18.00B."
+    },
+    {
+        "question": "What was the closing price of Alphabet's stock on June 25, 2024, and how does it compare to the opening price on the same day?",
+        "image_id": "candlestick-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-3.png",
+        "GT_answer": "The closing price of Alphabet's stock on June 25, 2024, was 185.580. It opened at 181.145 on the same day, resulting in an increase of 4.435.",
+        "prediction": "The closing price of Alphabet's stock on June 25, 2024, was $187.130, while the opening price was $186.649."
+    },
+    {
+        "question": "What has been the trend of Coca-Cola's closing price compared to the PE bands from August 2019 to August 2024?",
+        "image_id": "statistic-22",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-22.png",
+        "GT_answer": "From August 2019 to August 2024, Coca-Cola's closing price generally stayed between the 26.94X and 22.51X PE bands. There were brief periods where the price dropped below the 22.51X band, particularly from early 2020 to mid-2020. Recent trends show the price approaching the 26.94X band again. Overall, the price has fluctuated within these bands, reflecting modest growth.",
+        "prediction": "The trend of Coca-Cola's closing price has been generally increasing compared to the PE bands from August 2019 to August 2024."
+    },
+    {
+        "question": "What was the highest trading volume for Advanced Micro Devices, Inc. (AMD) between August 1, 2024, and August 23, 2024?",
+        "image_id": "table-34",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-34.png",
+        "GT_answer": "The highest trading volume for Advanced Micro Devices, Inc. (AMD) between August 1, 2024, and August 23, 2024, was 94,731,900 on August 1, 2024.",
+        "prediction": "The highest trading volume for Advanced Micro Devices, Inc. (AMD) between August 1, 2024, and August 23, 2024 was 94,731,900."
+    },
+    {
+        "question": "What was the average stock price of Meta (META) on June 25, 2024, and how does it compare to the latest price on that date?",
+        "image_id": "candlestick-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-5.png",
+        "GT_answer": "The average stock price of Meta (META) on June 25, 2024, was $507.056. The latest price on that date was $510.600. The latest price was higher than the average price by $3.544.",
+        "prediction": "The average stock price of Meta (META) on June 25, 2024, was $507.059, while the latest price on that date was $510.600."
+    },
+    {
+        "question": "What is the trend in operating cash flow and year-over-year growth for the company from Q3 2010 to Q2 2024?",
+        "image_id": "statistic-15",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-15.png",
+        "GT_answer": "From Q3 2010 to Q2 2024, the operating cash flow shows an overall increasing trend, with occasional fluctuations. The year-over-year growth (YoY) line is volatile, often spiking up or down sharply, indicating fluctuating growth rates over the period.",
+        "prediction": "The trend shows a fluctuating operating cash flow with a general increase over the years, especially from 2015 to 2024. Year-over-year growth is variable but shows an overall increase."
+    },
+    {
+        "question": "What are the implications of the 14-period Slow Stochastic Oscillator being above 80 for Alphabet Inc. (GOOGL), and how does this relate to the overall trading activity and market conditions over the period ending June 27, 2024?",
+        "image_id": "document-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-5.png",
+        "GT_answer": "The 14-period Slow Stochastic Oscillator being above 80 for Alphabet Inc. (GOOGL) suggests that the stock is in an overbought condition. This indicates that current price levels might be influenced by active purchasing, potentially driving prices higher. However, it also implies that the stock may be due for a pullback or correction. The current strong bullish trend, lighter trading volume, and positive On-Balance Volume (OBV) suggest buyer dominance, while wider Bollinger Bands indicate increased volatility, possibly signaling a near-term pause or reversal in the trend.",
+        "prediction": "The 14-period Slow Stochastic Oscillator being above 80 indicates a strong bullish trend for Alphabet Inc. (GOOGL), suggesting overbought conditions and active purchasing driving prices higher. This could lead to increased volatility in the near term, but the OBV indicator remains bullish with a positive slope, indicating that buyers are more active than sellers."
+    },
+    {
+        "question": "What was the net profit for the company in 2024 Q3 given a total revenue of 61.86 billion and a gross profit of 43.35 billion?",
+        "image_id": "statistic-16",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-16.png",
+        "GT_answer": "The net profit for the company in 2024 Q3 was 21.94 billion.",
+        "prediction": "To calculate the net profit, we need to subtract the operating expenses, SG&A, and R&D from the gross profit. \n\nOperating expenses: 27.58 billion\nSG&A: 8.12 billion\nR&D: 7.65 billion\n\nNet profit = Gross profit - Operating expenses - SG&A - R&D\n= 43.35 billion - 27.58 billion - 8.12 billion - 7.65 billion\n= 0.40 billion\n\nThe net profit for the company in 2024 Q3 was 0.40 billion."
+    },
+    {
+        "question": "What trend is observed in the EPS and YoY growth from Q1 2018 to Q1 2024?",
+        "image_id": "statistic-12",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-12.png",
+        "GT_answer": "From Q1 2018 to Q1 2024, the trend in EPS shows a gradual increase overall. The YoY growth, however, fluctuates significantly, with periods of both increases and decreases. Initially, there is volatility with some negative growth, followed by a general stabilization and increase in recent quarters.",
+        "prediction": "The EPS and YoY growth show an overall increasing trend from Q1 2018 to Q1 2024, with some fluctuations and peaks."
+    },
+    {
+        "question": "What are the potential implications of the bearish medium-term trend and oversold conditions indicated by the 14-period Slow Stochastic oscillator for Salesforce.com Inc. (CRM)?",
+        "image_id": "document-3",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-3.png",
+        "GT_answer": "The bearish medium-term trend alongside the oversold conditions indicated by the 14-period Slow Stochastic oscillator for Salesforce.com Inc. (CRM) suggests a strong selling pressure. This could imply a potential for a price reversal or rebound if investors perceive the stock as undervalued. However, caution is warranted due to the existing downward pressure, and investors might look for signs of consolidation or other technical indicators for timing entry points.",
+        "prediction": "The potential implications are that the stock may experience a short-term reversal or consolidation before continuing its bearish trend, and investors should be cautious and consider a more defensive approach."
+    },
+    {
+        "question": "What was the trend in the Institutional Holding Ratio for OPPT between Q1 2022 and Q1 2023?",
+        "image_id": "statistic-19",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-19.png",
+        "GT_answer": "The Institutional Holding Ratio for OPPT decreased between Q1 2022 and Q1 2023.",
+        "prediction": "The Institutional Holding Ratio decreased from 16.00% in Q1 2022 to 12.00% in Q1 2023."
+    },
+    {
+        "question": "What is the trend in the institutional holding ratio for NVDA from 2020 Q1 to 2024 Q2?",
+        "image_id": "statistic-2",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-2.png",
+        "GT_answer": "The institutional holding ratio for NVDA has generally increased from 2020 Q1 to 2024 Q2.",
+        "prediction": "The trend in the institutional holding ratio for NVDA shows a relatively stable holding ratio, with slight fluctuations over time."
+    },
+    {
+        "question": "What was Apple's gross profit margin in 2020, and how does it compare to 2023?",
+        "image_id": "table-29",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-29.png",
+        "GT_answer": "Apple's gross profit margin in 2020 was 38.23%. In 2023, it increased to 44.13%.",
+        "prediction": "According to the image, Apple's gross profit margin in 2020 was 61.06%, while in 2023 it was 56.08%. This represents a decline of 5.98 percentage points over the three-year period."
+    },
+    {
+        "question": "Which company experienced the highest percentage change in price, and what was its total revenue in USD as of June 30, 2024?",
+        "image_id": "table-5",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-5.png",
+        "GT_answer": "The company that experienced the highest percentage change in price is Hollysus Automation Technologies (HOLI) with a 17.61% increase. Its total revenue as of June 30, 2024, was USD 223.72 million.",
+        "prediction": "HOLI had the highest percentage change in price at 25.45%. According to the image, HOLI's total revenue as of June 30, 2024, was $223.72 million USD."
+    },
+    {
+        "question": "What was Coca-Cola's P/E ratio (TTM) trend from August 2019 to August 2024, and how did it compare to the median during this period?",
+        "image_id": "statistic-21",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-21.png",
+        "GT_answer": "From August 2019 to August 2024, Coca-Cola's P/E ratio (TTM) showed fluctuations but remained generally close to the median level of 26.61. It had periods above the 75th percentile, notably around mid-2021, but was often within the 25th to 75th percentile range. Over the period, it tended to hover near the median line, indicating a stable trend.",
+        "prediction": "Coca-Cola's P/E ratio (TTM) trended from approximately 20 in August 2019 to around 25 by August 2024. The median P/E ratio remained relatively stable around 23 throughout the period, with a slight increase to 24 by August 2024."
+    },
+    {
+        "question": "What was the closing price of the stock on June 25, 2024, and what was the percentage gain from the previous day?",
+        "image_id": "candlestick-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/candlestick-4.png",
+        "GT_answer": "The closing price of the stock on June 25, 2024, was 510.600. The percentage gain from the previous day was 2.34%.",
+        "prediction": "The closing price of the stock on June 25, 2024, was 5110.00. The percentage gain from the previous day was +3.24%."
+    },
+    {
+        "question": "What was the trend in the Net Sales Margin (%) for Asolda Treatment [ACOR.O] from 2017 to 2023?",
+        "image_id": "table-27",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-27.png",
+        "GT_answer": "The Net Sales Margin (%) for Asolda Treatment [ACOR.O] decreased significantly from 5.50% in 2017 to -214.95% in 2023, showing a continuous decline over this period.",
+        "prediction": "The Net Sales Margin (%) for Asolda Treatment [ACOR.O] has been decreasing from 2017 to 2023, indicating a negative trend."
+    },
+    {
+        "question": "What is the trend in Apple's operating income from 2018 to 2023?",
+        "image_id": "table-23",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-23.png",
+        "GT_answer": "From 2018 to 2023, Apple's operating income increased from 265.60 billion USD in 2018 to 383.29 billion USD in 2023. The trend shows general growth over this period.",
+        "prediction": "Apple's operating income has shown a fluctuating trend, with a significant increase in 2020 and a decline in 2021, followed by a recovery in 2022 and 2023."
+    },
+    {
+        "question": "What is the last price listed for Goldenstone-U (GDSTU) as of August 16, 2024, according to the table?",
+        "image_id": "table-30",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-30.png",
+        "GT_answer": "The last price listed for Goldenstone-U (GDSTU) as of August 16, 2024, is 11.30.",
+        "prediction": "The last price listed for Goldenstone-U (GDSTU) is 11.30."
+    },
+    {
+        "question": "What is the significance of Intel Corporation's first microprocessor introduction in 1971 to its business development?",
+        "image_id": "table-37",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-37.png",
+        "GT_answer": "The introduction of the first microprocessor by Intel Corporation in 1971 was significant to its business development as it positioned the company at the forefront of the computer and Internet revolutions. This innovation laid the foundation for Intel to become a key provider of high-performance microprocessors and other essential components in standard computer architecture, contributing to its status as the world's largest manufacturer of computer parts and semiconductor chips.",
+        "prediction": "The introduction of the world's first microprocessor in 1971 revolutionized the computer industry, enabling high-performance microprocessors, chipsets, boards, systems, and software. This innovation laid the foundation for Intel's future business growth."
+    },
+    {
+        "question": "Which company had the highest percentage change in stock price from June 25, 2024, to July 01, 2024?",
+        "image_id": "table-12",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-12.png",
+        "GT_answer": "The company with the highest percentage change in stock price from June 25, 2024, to July 01, 2024, is Innovative Eyewear (LUCY) with a 55.12% change.",
+        "prediction": "Carmell had the highest percentage change of 23.31%."
+    },
+    {
+        "question": "What was Tesla's EPS (Earnings Per Share) trend from the fiscal year 2018 to 2023, and how did it correlate with the year-over-year growth indicated on the chart?",
+        "image_id": "statistic-32",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-32.png",
+        "GT_answer": "From 2018 to 2023, Tesla's EPS showed a clear upward trend. It started negative in 2018 and 2019, improved in 2020, peaked in 2021, then slightly declined in 2022 before rising again in 2023. The year-over-year (YoY) growth correlated with this trend, initially improving sharply in 2020 and 2021, then stabilizing in the subsequent years, reflecting strong growth followed by more consistent gains.",
+        "prediction": "The EPS trend from fiscal year 2018 to 2023 shows a fluctuating pattern, with a high in 2021 and a low in 2019. The year-over-year growth is not consistently increasing, indicating a volatile performance."
+    },
+    {
+        "question": "What was the largest insider transaction change in shares for Maestri Luca between April 2, 2024, and April 11, 2024, and what was the corresponding share price?",
+        "image_id": "table-15",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-15.png",
+        "GT_answer": "The largest insider transaction change in shares for Maestri Luca between April 2, 2024, and April 11, 2024, was -27.60K shares on April 11, 2024, with a corresponding share price of $174.120.",
+        "prediction": "The largest insider transaction change in shares for Maestri Luca was a purchase of +27.60K shares on April 11, 2024, with a corresponding share price of 174.120 USD."
+    },
+    {
+        "question": "What is the trend in Meta's current ratio from Q2 2023 to Q2 2024, and how do the current assets and liabilities compare over the same period?",
+        "image_id": "statistic-30",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-30.png",
+        "GT_answer": "The trend in Meta's current ratio shows an increase from 232.48% in Q2 2023 to 283.04% in Q2 2024. Over the same period, both current assets and current liabilities have increased, with current assets growing at a slightly faster rate than current liabilities.",
+        "prediction": "Meta's current ratio has shown a consistent upward trend from Q2 2023 to Q2 2024. The current assets have consistently been higher than the current liabilities over the same period."
+    },
+    {
+        "question": "What was the trend in the debt ratio from Q1 2024 to Q1 2025, and how did it correlate with the changes in assets and liabilities during the same period?",
+        "image_id": "statistic-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-6.png",
+        "GT_answer": "From Q1 2024 to Q1 2025, the debt ratio decreased from 44.85% to 36.24%. During this period, assets showed an upward trend, while liabilities remained relatively stable. The decreasing debt ratio is likely due to the increase in assets outpacing any changes in liabilities.",
+        "prediction": "The debt ratio decreased over time, indicating a reduction in debt relative to assets. This suggests that the company may have been actively managing its debt levels and improving its financial stability."
+    },
+    {
+        "question": "What are the net profit margins for KO and PEP in Q2 2024?",
+        "image_id": "statistic-23",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-23.png",
+        "GT_answer": "In Q2 2024, the net profit margin for KO is 23.6%, and for PEP, it is 12.6%.",
+        "prediction": "The net profit margins for KO in Q2 2024 are approximately 25%, while those for PEP are around 15%."
+    },
+    {
+        "question": "Between August 15, 2023, and August 15, 2024, how did insider trading activities correlate with Apple Inc.'s stock closing price on April 1, 2024?",
+        "image_id": "statistic-25",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-25.png",
+        "GT_answer": "On April 1, 2024, there is an instance of decreased insider holdings, indicated by a red bar. The stock's closing price on this date remained steady, with no significant drop correlating with the insider trading activity. The overall trend shows stability around this time.",
+        "prediction": "The chart shows that there were increased and decreased holdings on various dates, but it doesn't provide a direct correlation between these activities and the closing price on April 1, 2024."
+    },
+    {
+        "question": "Which company in the Interactive Home Entertainment sub-industry had the highest percentage change in stock price as of July 1, 2024?",
+        "image_id": "table-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-8.png",
+        "GT_answer": "Golden Matrix Group (GMGI) had the highest percentage change in stock price at 7.29% as of July 1, 2024.",
+        "prediction": "According to the table, Playtika Holding (PLTK) had the highest percentage change in stock price at 6.23%."
+    },
+    {
+        "question": "What are the Relative Strength Index (RSI) values for each period (RSI6, RSI16, RSI12, and RSI24) between November 23 and April 24?",
+        "image_id": "indicator-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-4.png",
+        "GT_answer": "The Relative Strength Index (RSI) values for each period are as follows:\n\n- RSI6: 68.41\n- RSI16: 64.40\n- RSI12: 59.01",
+        "prediction": "The Relative Strength Index (RSI) values for each period between November 23 and April 24 are as follows:\n\n- RSI6: Between 0 and 100, with fluctuations\n- RSI16: Between 0 and 100, with fluctuations\n- RSI12: Between 0 and 100, with fluctuations\n- RSI24: Between 0 and 100, with fluctuations\n\nPlease note that these values represent relative strength indicators, which are calculated based on the stock's price movements over different time periods."
+    },
+    {
+        "question": "What is the current closing price of AAPL, and how does it compare to the opening price for the same day?",
+        "image_id": "mixed-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-1.png",
+        "GT_answer": "The current closing price of AAPL is 229.790. The opening price for the same day was 230.290. The closing price is lower than the opening price by 0.500.",
+        "prediction": "The current closing price of AAPL is $229.790. The opening price for the same day is $230.100, which is $0.310 higher."
+    },
+    {
+        "question": "What was the year-on-year growth rate of net profit for Asolda Treatment [ACOR.O] in 2020?",
+        "image_id": "table-26",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-26.png",
+        "GT_answer": "The year-on-year growth rate of net profit for Asolda Treatment [ACOR.O] in 2020 was -99,594.00%.",
+        "prediction": "The year-on-year growth rate of net profit for Asolda Treatment [ACOR.O] in 2020 was -99,594.00%."
+    },
+    {
+        "question": "What trends are observed in the debt ratio, assets, and liabilities from 2010 Q3 to 2024 Q2 in the balance sheet?",
+        "image_id": "statistic-13",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-13.png",
+        "GT_answer": "From 2010 Q3 to 2024 Q2:\n\n1. **Debt Ratio:** Initially increases, peaks around 2016 Q4, and then gradually declines.\n2. **Assets:** Exhibit a steady increase over the period.\n3. **Liabilities:** Also increase steadily, but at a slower rate compared to assets. \n\nOverall, while both assets and liabilities grow, the debt ratio decreases after peaking, indicating improved leverage.",
+        "prediction": "The debt ratio generally increases from 2010 Q3 to 2014 Q2, then decreases until 2019 Q3, followed by a slight increase until 2022 Q1, and then stabilizes. Assets show a steady increase throughout the period. Liabilities also show an increase but at a slower rate than assets."
+    },
+    {
+        "question": "What is the listing date of Apple Inc. on the NASDAQ Stock Exchange?",
+        "image_id": "table-14",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-14.png",
+        "GT_answer": "Apple Inc. was listed on the NASDAQ Stock Exchange on 1980-12-12.",
+        "prediction": "Apple Inc. was listed on the NASDAQ Stock Exchange on December 12, 1980."
+    },
+    {
+        "question": "What is the current P/E (TTM) ratio for MSFT given the chart showing the stock price reaching 456.73 with a market cap of 3.39 trillion dollars?",
+        "image_id": "statistic-11",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-11.png",
+        "GT_answer": "The current P/E (TTM) ratio for MSFT is 39.39.",
+        "prediction": "The current P/E (TTM) ratio for MSFT is approximately 0.24%."
+    },
+    {
+        "question": "What was the revenue contribution from the Data Center segment for the company in the third quarter of 2024?",
+        "image_id": "statistic-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-9.png",
+        "GT_answer": "The revenue contribution from the Data Center segment in the third quarter of 2024 was 14.51 billion.",
+        "prediction": "The Data Center segment contributed $14.51B to the company's revenue in the third quarter of 2024."
+    },
+    {
+        "question": "What is the Price to Earnings (PE) ratio for Ferrari (RACE.N) as of the latest trading day on 2024-08-29?",
+        "image_id": "table-25",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-25.png",
+        "GT_answer": "The Price to Earnings (PE) ratio for Ferrari (RACE.N) as of 2024-08-29 is 62.51.",
+        "prediction": "The Price to Earnings (PE) ratio for Ferrari (RACE.N) as of the latest trading day on 2024-08-29 is 62.51."
+    },
+    {
+        "question": "What was the total insider transaction change for Niermann Jon M on February 14, 2024, and what was his position at that time?",
+        "image_id": "table-19",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-19.png",
+        "GT_answer": "On February 14, 2024, the total insider transaction change for Niermann Jon M was -43.49K (-34.79K and -8.70K), and his position was Chief Executive Officer.",
+        "prediction": "Niermann Jon M had a total insider transaction change of -34.79K and -8.70K on February 14, 2024. At that time, his position was Chief Executive Officer."
+    },
+    {
+        "question": "Which company experienced the highest percentage change in price on July 1, 2024, and what was the corresponding trading volume for that day?",
+        "image_id": "table-13",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-13.png",
+        "GT_answer": "Continuem (CTNM) experienced the highest percentage change in price on July 1, 2024, with a change of 19.25%. The corresponding trading volume for that day was 116,996 shares.",
+        "prediction": "The company that experienced the highest percentage change in price on July 1, 2024, was Neurogene, with a price change of 11.62%. The corresponding trading volume for that day was 426,344.20M."
+    },
+    {
+        "question": "What was Apple's net profit in the fiscal year ending on September 30, 2021?",
+        "image_id": "table-21",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-21.png",
+        "GT_answer": "Apple's net profit in the fiscal year ending on September 30, 2021, was 94.68 billion USD.",
+        "prediction": "Apple's net profit in the fiscal year ending on September 30, 2021 was $94.68 billion."
+    },
+    {
+        "question": "What transactions did Zuckerberg Mark make on 2024-08-21 at a price of 532.713 USD?",
+        "image_id": "table-36",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-36.png",
+        "GT_answer": "On 2024-08-21, Zuckerberg Mark made an indirect transaction of -2,110 shares at a price of 532.713 USD.",
+        "prediction": "Zuckerberg Mark made an indirect purchase of 530.646 USD and an indirect sale of 539.030 USD on 2024-08-21 at a price of 532.713 USD."
+    },
+    {
+        "question": "What was the total fair value of Level 3 liabilities for the company on June 30, 2022, in millions?",
+        "image_id": "document-18",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-18.png",
+        "GT_answer": "The total fair value of Level 3 liabilities for the company on June 30, 2022, was $16 million.",
+        "prediction": "$105 million"
+    },
+    {
+        "question": "What was the year-over-year percentage change in operating cash flow for 2024 Q3 compared to the previous quarter?",
+        "image_id": "statistic-8",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-8.png",
+        "GT_answer": "The year-over-year percentage change in operating cash flow for 2024 Q3 compared to the previous quarter (2024 Q2) is not directly shown in the chart. The chart provides the operating cash flow figures and the year-over-year trend line. You need the precise YoY percentage from 2023 Q3 to 2024 Q3, but that specific detail isn't given.",
+        "prediction": "The year-over-year percentage change in operating cash flow for 2024 Q3 was approximately 15.4%."
+    },
+    {
+        "question": "Which company experienced the highest percentage change in stock price on July 1, 2024?",
+        "image_id": "table-4",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-4.png",
+        "GT_answer": "Nano Nuclear (NNE) experienced the highest percentage change in stock price on July 1, 2024, with a 19.88% increase.",
+        "prediction": "Warrior Met Coal experienced the highest percentage change in stock price on July 1, 2024, with a 16.89% increase."
+    },
+    {
+        "question": "How has Apple's price-to-earnings (P/E) ratio fluctuated from August 2019 to August 2024, and how does the latest price of 224.53 relate to the P/E bands of 39.20X, 33.51X, 27.82X, 22.13X, and 16.44X?",
+        "image_id": "statistic-28",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-28.png",
+        "GT_answer": "From August 2019 to August 2024, Apple's P/E ratio has fluctuated significantly, initially staying below the P/E bands and then rising above them during specific periods. \n\nAs of the latest price of 224.53, it is near the 39.20X P/E band. This indicates that the current P/E ratio is at the higher end of the provided bands, suggesting a relatively high valuation compared to historical levels within this timeframe.",
+        "prediction": "Based on the graph, Apple's P/E ratio has been steadily increasing from 2019 to 2021, with a significant spike in August 2021. The P/E ratio then stabilizes before rising again in 2022. As of the latest data point in August 2024, the P/E ratio is around 33.51X. The latest price of 224.53 falls within the P/E band of 33.51X, indicating that the stock is trading at a premium relative to its historical earnings."
+    },
+    {
+        "question": "What trend is observed in the operating cash flow and year-over-year change from Q3 2019 to Q3 2024?",
+        "image_id": "statistic-20",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-20.png",
+        "GT_answer": "From Q3 2019 to Q3 2024, the operating cash flow shows a consistent negative trend, with amounts mostly below zero. The year-over-year (YoY) change fluctuates, indicating variability over this period. There are some improvements visible around 2022 to 2023, but the overall trend remains negative as it declines again by Q3 2024.",
+        "prediction": "The operating cash flow exhibits a fluctuating trend, while the year-over-year change shows a significant variation, with negative values observed in some quarters."
+    },
+    {
+        "question": "What was Target's (TGT) closing stock price on August 21, 2024, and how much did it change compared to the previous day?",
+        "image_id": "mixed-22",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-22.png",
+        "GT_answer": "On August 21, 2024, Target's (TGT) closing stock price was 159.250, with a change of +14.920 compared to the previous day.",
+        "prediction": "The closing stock price of Target (TGT) on August 21, 2024, was $156.820, which is an increase of 1.53% from the previous day."
+    },
+    {
+        "question": "What is the change in the consensus target price for Apple (AAPL.O) from the latest available data compared to the target price in February 2024?",
+        "image_id": "mixed-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/mixed-7.png",
+        "GT_answer": "The consensus target price for Apple (AAPL.O) in the latest data is 247.00. In February 2024, the target price was 208.00. The change in the consensus target price is an increase of 39.00.",
+        "prediction": "The consensus target price for Apple (AAPL.O) has increased from $190 to $280, representing a change of $90."
+    },
+    {
+        "question": "What was the trend in operating income and year-over-year growth for the company from 2010 Q3 to 2024 Q2?",
+        "image_id": "statistic-14",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-14.png",
+        "GT_answer": "From 2010 Q3 to 2024 Q2, the operating income generally showed an upward trend, with noticeable growth over the years. The year-over-year (YoY) growth had a significant spike around 2013 Q1 but remained relatively stable with smaller fluctuations for the rest of the period, showing consistent growth in operating income until 2024 Q2.",
+        "prediction": "The trend in operating income showed a significant increase from 2010 Q3 to 2024 Q2, with a peak in 2021 Q2 and a slight decrease in 2022 Q2. The year-over-year growth also showed a significant increase, peaking at 4200% in 2021 Q2."
+    },
+    {
+        "question": "What was the year-over-year (YoY) percentage change in net income from 2024 Q4 to 2025 Q1 according to the income statement?",
+        "image_id": "statistic-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-7.png",
+        "GT_answer": "The year-over-year (YoY) percentage change in net income from 2024 Q4 to 2025 Q1 is 898.43%.",
+        "prediction": "The year-over-year (YoY) percentage change in net income from 2024 Q4 to 2025 Q1 was -14.88%."
+    },
+    {
+        "question": "How has the 50-1 stock split announced by Chipotle Mexican Grill, expected to close by June 6, likely impacted investor accessibility and stock trading volumes?",
+        "image_id": "document-9",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-9.png",
+        "GT_answer": "The 50-1 stock split announced by Chipotle Mexican Grill is likely to have made the stock more accessible to smaller investors due to the reduced price per share. This increased accessibility can potentially drive up trading volumes as more investors are able to buy shares.",
+        "prediction": "The 50-1 stock split has made the stock more accessible to smaller investors and may increase trading volumes."
+    },
+    {
+        "question": "What is the total revenue year-over-year percentage change as of June 30, 2024, for Nvidia, and how does it rank among the listed companies?",
+        "image_id": "table-38",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-38.png",
+        "GT_answer": "The total revenue year-over-year percentage change for Nvidia as of June 30, 2024, is 101.48%. It ranks 1st among the listed companies.",
+        "prediction": "Nvidia's total revenue year-over-year percentage change as of June 30, 2024, is 101.48%, ranking 1st."
+    },
+    {
+        "question": "What was Intel's EPS (Earnings Per Share) in 2023 Q4 and how did it compare to the previous quarter, 2023 Q3?",
+        "image_id": "statistic-33",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-33.png",
+        "GT_answer": "In 2023 Q4, Intel's Earnings Per Share (EPS) was 0.63. This was an increase from the previous quarter, 2023 Q3, when the EPS was 0.07.",
+        "prediction": "According to the image, Intel's EPS in 2023 Q4 was 0.63. In comparison to the previous quarter, 2023 Q3, which had an EPS of 0.070, there was a significant increase of 795.71%."
+    },
+    {
+        "question": "What percentage of the total revenue in Q1 2025 is attributed to the Gaming segment, and how does it compare to the Data Center segment in terms of revenue share?",
+        "image_id": "statistic-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/statistic-1.png",
+        "GT_answer": "The Gaming segment accounts for 10.16% of the total revenue in Q1 2025. Comparatively, the Data Center segment contributes 86.63% of the revenue.",
+        "prediction": "According to the revenue chart, the Gaming segment accounts for 10.16% of the total revenue, while the Data Center segment accounts for 86.63%. This indicates that the Data Center segment dominates the revenue, with the Gaming segment being a relatively smaller contributor."
+    },
+    {
+        "question": "What impact is the acquisition of WTG Midstream for $3.2 billion expected to have on Energy Transfer LP\u2019s distributable cash flow (DCF) per share by the year 2027?",
+        "image_id": "document-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-6.png",
+        "GT_answer": "The acquisition of WTG Midstream is expected to potentially add $0.07 per share to Energy Transfer LP\u2019s distributable cash flow (DCF) by the year 2027.",
+        "prediction": "According to the article, this acquisition is projected to add $0.04 per share to distributable cash flow (DCF) in 2025 and potentially $0.07 per share by 2027."
+    },
+    {
+        "question": "What trend is indicated by the KDJ (9, 3, 3) values during the time period from November 2023 to June 2024?",
+        "image_id": "indicator-6",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-6.png",
+        "GT_answer": "The KDJ (9, 3, 3) values show a cyclical pattern from November 2023 to June 2024, with multiple peaks and troughs. The lines frequently cross each other, indicating several potential buy and sell signals. There's no consistent upward or downward trend, but rather fluctuations that suggest volatility within this period.",
+        "prediction": "The KDJ values show a fluctuating trend with peaks and troughs indicating volatility in the market."
+    },
+    {
+        "question": "What was the Return on Equity (ROE) (diluted) percentage for Tuisimple Holdings [TSP.O] in the 2021 fiscal year?",
+        "image_id": "table-28",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/table-28.png",
+        "GT_answer": "The Return on Equity (ROE) (diluted) percentage for Tuisimple Holdings [TSP.O] in the 2021 fiscal year was -55.53%.",
+        "prediction": "The Return on Equity (ROE) (diluted) percentage for Tuisimple Holdings [TSP.O] in the 2021 fiscal year was -55.53%."
+    },
+    {
+        "question": "What is the trend of the stock price indicated by the candlestick chart from November 23 to June 24, based on the Bollinger Bands shown with upper, middle, and lower values?",
+        "image_id": "indicator-1",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/indicator-1.png",
+        "GT_answer": "From November 23 to June 24, the stock price shows an upward trend. The candlesticks primarily remain above the middle Bollinger Band, indicating a strong bullish trend. Occasional touchpoints with the upper band suggest overbought conditions, but the overall movement is positive.",
+        "prediction": "The trend of the stock price indicated by the candlestick chart from November 23 to June 24 is generally upward, with some fluctuations and volatility."
+    },
+    {
+        "question": "What is the current price-to-earnings (P/E) ratio for JD.com, Inc. based on trailing twelve months (TTM) data, and how does it compare to the static P/E ratio?",
+        "image_id": "document-7",
+        "image_path": "/model/haohui/FMLLM/RAG-data/MMfin-images/document-7.png",
+        "GT_answer": "The current price-to-earnings (P/E) ratio for JD.com, Inc. based on trailing twelve months (TTM) data is 15.34. This is slightly lower than the static P/E ratio, which is 15.62.",
+        "prediction": "The current P/E ratio for JD.com, Inc. based on TTM data is 15.34, while the static P/E ratio is 15.82."
+    }
+]
